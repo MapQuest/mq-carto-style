@@ -1,0 +1,31 @@
+/* map background */
+#boundingbox {
+  [zoom>=2][zoom<=6] {
+    polygon-fill:#f0f5df;
+  }
+  [zoom>=7][zoom<=8] {
+    polygon-fill:#f4f5df;
+  }
+  [zoom>=9][zoom<=12] {
+    polygon-fill:#f5f4e1;
+  }
+  [zoom>=13][zoom<=15] {
+    polygon-fill:#f5f0e4;
+  }
+  [zoom>=16] {
+    polygon-fill:#f4f0e6;
+  }
+}
+
+/* temporary */
+#land {
+  [zoom<=5] {
+    polygon-fill:red;
+  }
+}
+
+#10madmin1statesprovi {
+  line-width:.5;
+  line-color:#168;
+  line-opacity:.25;
+}

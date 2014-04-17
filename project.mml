@@ -1,0 +1,338 @@
+{
+  "bounds": [
+    -180,
+    -85.0511,
+    180,
+    85.0511
+  ],
+  "center": [
+    0,
+    0,
+    2
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 18,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "base",
+    "polygonal",
+    "linear"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "extent": [
+        -180,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "boundingbox",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-900913-bounding-box.zip"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "boundingbox"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        179.99998854084416,
+        83.62360016227004
+      ],
+      "id": "land",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/markvahrenwald/Documents/GIS data/world/LAND.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "land"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -139.04719194227846,
+        -49.25074024841062,
+        178.44862226797608,
+        81.13822602001463
+      ],
+      "id": "10madmin1statesprovi",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-1-states-provinces-lines.zip"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "10madmin1statesprovi"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -124.41617567700001,
+        28.9601923130001,
+        -70.599577586,
+        49.0010865260001
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "native_national_forests",
+        "key_field": "",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-124.416175677,28.9601923130001,-70.599577586,49.0010865260001",
+        "host": "localhost",
+        "port": "5432",
+        "user": "markvahrenwald",
+        "password": "Lambkin94",
+        "dbname": "multinet"
+      },
+      "id": "national_forests",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "national_forests",
+      "status": "off"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -180,
+        -82.938791,
+        -21.9998202,
+        58.1871087
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "native_water_polygons",
+        "key_field": "",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-180,-82.938791,-21.9998202,58.1871087",
+        "host": "localhost",
+        "port": "5432",
+        "user": "markvahrenwald",
+        "password": "Lambkin94",
+        "dbname": "multinet"
+      },
+      "id": "water_polygons",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "water_polygons",
+      "status": "off"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.9999999999996,
+        -85.051,
+        179.9999999999996,
+        82.21915290000001
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "vector_polygonal_geometry_6",
+        "key_field": "",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-20037508.3427892,-20427623.8599454,20037508.3427892,17145519.3527414",
+        "host": "localhost",
+        "port": "5432",
+        "user": "markvahrenwald",
+        "password": "Lambkin94",
+        "dbname": "multinet"
+      },
+      "id": "vector_polygonal_geometry_6",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "vector_polygonal_geometry_6"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.9999999999996,
+        -85.051,
+        179.9999999999996,
+        73.75555399999999
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "vector_polygonal_geometry_8",
+        "key_field": "",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-20037508.3427892,-20427623.8599454,20037508.3427892,12417549.6598506",
+        "host": "localhost",
+        "port": "5432",
+        "user": "markvahrenwald",
+        "password": "Lambkin94",
+        "dbname": "multinet"
+      },
+      "id": "vector_polygonal_geometry_8",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "vector_polygonal_geometry_8"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.9999999999996,
+        -85.051,
+        179.9999999999996,
+        82.21915290000001
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "vector_polygonal_geometry_10",
+        "key_field": "",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-20037508.3427892,-20427623.8599454,20037508.3427892,17145519.3527414",
+        "host": "localhost",
+        "port": "5432",
+        "user": "markvahrenwald",
+        "password": "Lambkin94",
+        "dbname": "multinet"
+      },
+      "id": "vector_polygonal_geometry_10",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "vector_polygonal_geometry_10"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.9999999999996,
+        -85.051,
+        179.9999999999996,
+        82.21915290000001
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "vector_polygonal_geometry_12",
+        "key_field": "",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-20037508.3427892,-20427623.8599454,20037508.3427892,17145519.3527414",
+        "host": "localhost",
+        "port": "5432",
+        "user": "markvahrenwald",
+        "password": "Lambkin94",
+        "dbname": "multinet"
+      },
+      "id": "vector_polygonal_geometry_12",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "vector_polygonal_geometry_12"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.9999999999996,
+        -85.051,
+        179.9999999999996,
+        82.21915290000001
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "vector_polygonal_geometry_16",
+        "key_field": "",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-20037508.3427892,-20427623.8599454,20037508.3427892,17145519.3527414",
+        "host": "localhost",
+        "port": "5432",
+        "user": "markvahrenwald",
+        "password": "Lambkin94",
+        "dbname": "multinet"
+      },
+      "id": "vector_polygonal_geometry_16",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "vector_polygonal_geometry_16"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -126.39451099999985,
+        24.57252980000002,
+        -67.04390600000002,
+        51.16658899999997
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "vector_linear_geometry_6",
+        "key_field": "",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-14070172.6035848,2823330.17859669,-7463293.4767121,6650814.45849096",
+        "host": "localhost",
+        "port": "5432",
+        "user": "markvahrenwald",
+        "password": "Lambkin94",
+        "dbname": "multinet"
+      },
+      "id": "vector_linear_geometry_6",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "vector_linear_geometry_6"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -128.34378500000014,
+        44.95625799999999,
+        -114.00095500000005,
+        53.532190999999976
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "vector_linear_geometry_8",
+        "key_field": "",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-14287164.7926814,5614637.83016477,-12690528.2605469,7082052.02418581",
+        "host": "localhost",
+        "port": "5432",
+        "user": "markvahrenwald",
+        "password": "Lambkin94",
+        "dbname": "multinet"
+      },
+      "id": "vector_linear_geometry_8",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "vector_linear_geometry_8"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "MQ Raster Specs",
+  "description": "",
+  "attribution": ""
+}
