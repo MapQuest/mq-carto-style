@@ -1,25 +1,67 @@
 #vector_linear_geometry_6 {
-  /* freeway */
-  [rclass=0][zoom>=6][zoom<=18] {
-    line-color:#7392d1;
+  ::freeway {
+    [rclass=0][zoom>=6][zoom<=7] {
+      line-color:#7392d1;
       [zoom=6] {
         line-width:0.7854;
       }
       [zoom=7] {
         line-width:1.1781;
       }
+    }
   }
 }
 
 #vector_linear_geometry_8 {
-  /* freeway */
-  [rclass=0][zoom>=8][zoom<=9] {
-    line-color:#7392d1;
+  ::ramp {
+    [ramp=true][zoom=9] {
+      line-color:#7392d1;
+      line-width:0.3927;
+    }
+  }
+  ::freeway {
+    [rclass=0][zoom>=8][zoom<=9] {
+      line-color:#7392d1;
       [zoom=8] {
         line-width:1.5708;
       }
       [zoom=9] {
         line-width:1.9635;
       }
+    }  
+  }
+}
+
+#vector_linear_geometry_10 {
+  ::freeway {
+    [rclass=0][zoom>=10][zoom<=11] {
+      line-color:#7392d1;
+      [zoom=8] {
+        line-width:1.5;
+      }
+      [zoom=9] {
+        line-width:2;
+      }
+    }  
+  }
+}
+
+#vector_linear_geometry_12 {
+  ::ramp {
+    [ramp=true][zoom>12] {
+      line-color:#7392d1;
+      line-width:1;
+    }
+  }
+  ::freeway {
+    [rclass=0][zoom>=12][zoom<=15] {
+      line-color:#7392d1;
+      [zoom=8] {
+        line-width:1.5;
+      }
+      [zoom=9] {
+        line-width:2;
+      }
+    }  
   }
 }

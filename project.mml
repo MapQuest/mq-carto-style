@@ -1,13 +1,13 @@
 {
   "bounds": [
-    -180,
-    -85.0511,
-    180,
-    85.0511
+    -124.1016,
+    45.3367,
+    -117.7734,
+    49.153
   ],
   "center": [
-    0,
-    0,
+    -120.5859,
+    47.0402,
     2
   ],
   "format": "png",
@@ -17,7 +17,6 @@
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "base",
-    "polygonal",
     "linear"
   ],
   "Layer": [
@@ -38,24 +37,6 @@
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "advanced": {},
       "name": "boundingbox"
-    },
-    {
-      "geometry": "polygon",
-      "extent": [
-        -179.9999885408441,
-        -85.051,
-        179.99998854084416,
-        83.62360016227004
-      ],
-      "id": "land",
-      "class": "",
-      "Datasource": {
-        "file": "/Users/markvahrenwald/Documents/GIS data/world/LAND.shp"
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "land"
     },
     {
       "geometry": "linestring",
@@ -328,6 +309,90 @@
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "advanced": {},
       "name": "vector_linear_geometry_8"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -128.34378500000014,
+        38.17137499999996,
+        -75.36030899999997,
+        53.532190999999976
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "vector_linear_geometry_10",
+        "key_field": "",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-14287164.7926814,4603663.72034301,-8389071.22390375,7082052.02418581",
+        "host": "localhost",
+        "port": "5432",
+        "user": "markvahrenwald",
+        "password": "Lambkin94",
+        "dbname": "multinet"
+      },
+      "id": "vector_linear_geometry_10",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "vector_linear_geometry_10"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -128.34378500000014,
+        38.17137499999996,
+        -75.36030899999997,
+        53.532190999999976
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "vector_linear_geometry_12",
+        "key_field": "",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-14287164.7926814,4603663.72034301,-8389071.22390375,7082052.02418581",
+        "host": "localhost",
+        "port": "5432",
+        "user": "markvahrenwald",
+        "password": "Lambkin94",
+        "dbname": "multinet"
+      },
+      "id": "vector_linear_geometry_12",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "vector_linear_geometry_12"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -106.21019700000024,
+        38.17137499999996,
+        -75.36030899999997,
+        41.002055000000006
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "vector_linear_geometry_16",
+        "key_field": "",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-11823265.0470933,4603663.72034301,-8389071.22390375,5012644.78060381",
+        "host": "localhost",
+        "port": "5432",
+        "user": "markvahrenwald",
+        "password": "Lambkin94",
+        "dbname": "multinet"
+      },
+      "id": "vector_linear_geometry_16",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "vector_linear_geometry_16"
     }
   ],
   "scale": 1,
