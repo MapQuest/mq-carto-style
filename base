@@ -18,11 +18,6 @@
 }
 
 /* temporary */
-#land {
-  [zoom<=5] {
-    polygon-fill:red;
-  }
-}
 
 #10madmin1statesprovi {
   line-width:.5;
