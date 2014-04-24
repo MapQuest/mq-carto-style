@@ -16,11 +16,3 @@
     polygon-fill:#f4f0e6;
   }
 }
-
-/* temporary */
-
-#10madmin1statesprovi {
-  line-width:.5;
-  line-color:#168;
-  line-opacity:.25;
-}
