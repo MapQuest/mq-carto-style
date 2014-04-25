@@ -6,40 +6,66 @@
 
 #vector_linear_county_8 {
   [zoom=9] {
-    ::casing {line-color:#ded5d4;line-width:3.0;line-cap:round;line-join:miter;}
-    ::fill {line-color:#968082;line-width:0.5;line-dasharray:2,2,4,4;line-cap:butt;line-join:round;}
+    /*::casing {line-color:#ded5d4;line-width:3.0;line-cap:round;line-join:miter;}*/
+    ::fill {line-color:#b09698;line-width:0.5;line-dasharray:2,2,4,2;line-cap:butt;line-join:round;}
   }
 }
 
 #vector_linear_county_10 {
   [zoom>=10][zoom<=11] {
     ::casing {line-color:#ded5d4;line-width:3.0;line-cap:round;line-join:miter;}
-    ::fill {line-color:#968082;line-width:0.5;line-dasharray:2,2,4,4;line-cap:butt;line-join:round;}
+    ::fill {line-color:#968082;line-width:0.5;line-dasharray:2,2,4,2;line-cap:butt;line-join:round;}
   }
 }
 
 #vector_linear_county_12 {
   [zoom>=12][zoom<=15] {
     ::casing {line-color:#ded5d4;line-width:3.0;line-cap:round;line-join:miter;}
-    ::fill {line-color:#968082;line-width:0.5;line-dasharray:2,2,4,4;line-cap:butt;line-join:round;}
+    ::fill {line-color:#968082;line-width:0.5;line-dasharray:2,2,4,2;line-cap:butt;line-join:round;}
   }
 }
 
 #vector_linear_county_16 {
   [zoom>=16][zoom<=18] {
     ::casing {line-color:#ded5d4;line-width:3.0;line-cap:round;line-join:miter;}
-    ::fill {line-color:#968082;line-width:0.5;line-dasharray:2,2,4,4;line-cap:butt;line-join:round;}
+    ::fill {line-color:#968082;line-width:0.5;line-dasharray:2,2,4,2;line-cap:butt;line-join:round;}
   }
 }
 
 #natearth_state_borders_10m {
-  ::casing {line-width:3;line-color:#e1e3cf;line-cap:round;line-join:miter;}
-  ::fill {line-width:1;line-color:#9e9a78;line-dasharray:3,3,6,6;line-cap:butt;line-join:round;}
+  [zoom=4] {
+    [iso='USA'],[iso='CAN'],[iso='AUS'] {
+      line-width:.5;line-color:#b8b38c;line-cap:round;line-join:round;
+    }
+  }
+  [zoom=5] {
+    [iso='USA'],[iso='CAN'],[iso='AUS'] {
+      line-width:.75;line-color:#b8b38c;line-cap:round;line-join:round;
+    }
+  }
+  [zoom=6] {
+    ::casing {line-width:3;line-color:#d9dbc1;line-cap:round;line-join:miter;}
+    ::fill {line-width:.75;line-color:#9e9a78;line-dasharray:5,5,10,5;line-cap:butt;line-join:round;}
+  }
+  [zoom>=7][zoom<=18] {
+    ::casing {line-width:4;line-color:#d9dbc1;line-cap:round;line-join:miter;}
+    ::fill {line-width:1;line-color:#9e9a78;line-dasharray:5,5,10,5;line-cap:butt;line-join:round;}
+  }
 }
 
-#natearth_country_borders_10m {
-  ::casing {line-width:3;line-color:#d4e0d2;line-cap:round;line-join:miter;}
-  ::fill {line-width:1;line-color:#88997d;line-dasharray:3,3,6,6;line-cap:butt;line-join:round;}
+  #natearth_country_borders_10m {
+  [zoom=4] {
+    ::casing {line-width:2;line-color:#cbd6c9;line-cap:round;line-join:miter;}
+    ::fill {line-width:.5;line-color:#728069;line-dasharray:3,3,6,3;line-cap:butt;line-join:round;}
+  }
+  [zoom=5] {
+    ::casing {line-width:3;line-color:#d4e0d2;line-cap:round;line-join:miter;}
+    ::fill {line-width:1;line-color:#88997d;line-dasharray:4,4,8,4;line-cap:butt;line-join:round;}
+  }
+  [zoom>=6][zoom<=18] {
+    ::casing {line-width:3;line-color:#d4e0d2;line-cap:round;line-join:miter;}
+    ::fill {line-width:1;line-color:#88997d;line-dasharray:5,5,10,5;line-cap:butt;line-join:round;}
+  }
 }
 
 /* ------------------------------------------------------------------- */
@@ -50,8 +76,8 @@
 
 #natearth_roads {
   ::freeway[type='Major Highway'] {
-    [zoom=4] {line-width:0.3927;line-color:#bbc5d4;}
-    [zoom=5] {line-width:0.3927;line-color:#bbc5d4;}
+    [zoom=4] {line-width:0.4;line-color:#bbc5d4;}
+    [zoom=5] {line-width:0.5;line-color:#a5b3c7;}
   }
 }
 
@@ -71,7 +97,7 @@
   }
   ::freeway[rclass=0] {
     [zoom>=6][zoom<=7] {
-      [toll=false] {line-color:#7392d1;}
+      [toll=false] {line-color:#85a3de;}
       [toll=true] {line-color:#4fbd65;}
       line-cap:round;line-join:round;
     }
@@ -82,7 +108,7 @@
   ::major_road2-3[rclass<=2][rclass<=3] {
     [zoom>=8][zoom<=9] {
       [zoom=8] {line-color:#fae661;}
-      [zoom=9] {line-color:#fae58a;}
+      [zoom=9] {line-color:#fade89;}
       line-cap:round;line-join:round;
       }
   }
@@ -103,7 +129,7 @@
   ::freeway[rclass=0][ramp!=true] {
     [zoom>=8][zoom<=9] {
       [zoom=8] {
-        [toll=false] {line-color:#7392d1;}
+        [toll=false] {line-color:#7e9cd9;}
         [toll=true] {line-color:#4fbd65;}
       }
       [zoom=9] {
@@ -122,7 +148,7 @@
   ::major_road2-3[rclass<=2][rclass<=3] {
     [zoom>=10][zoom<=11] {
       [zoom=10] {line-color:#fae791;}
-      [zoom=11] {line-color:#faeb8a;}
+      [zoom=11] {line-color:#fae589;}
       line-cap:round;line-join:round;
       }
   }
@@ -182,9 +208,8 @@
       [zoom=12] {line-color:#dedacb;}
       [zoom>=13][zoom<=15] {
         line-color:#fbfaf6;
-        [zoom>=14][restriction=true] {line-color:#d2d2d2}
+        [zoom>=14][restriction=true] {line-color:#d2d2d2;line-cap:round;line-join:round;}
       }
-      line-cap:round;line-join:round;
     }
   }
   ::surface_ramp[rclass!=0][ramp=true] {
@@ -237,7 +262,7 @@
   ::freeway_ramp[rclass=0][ramp=true] {      /* includes free and toll ramps */
     ::casing {
       [zoom=15] {
-        [toll=false] {line-color:#95add8;}   /* the freeway ramp casing and fill appear to be inverted here */
+        [toll=false] {line-color:#95add8;}
         [toll=true] {line-color:#99cca4;}
         line-cap:round;line-join:round;
       }
@@ -316,13 +341,10 @@
       marker-line-width:0.0;
     }
   }
-
   ::parking_aisle[rclass=7] {
     [zoom>=16][zoom<=18] {
       line-color:#cccccc;line-cap:round;line-join:round;}
   }
-
-
   ::railroad[rclass=14] {
     ::casing[zoom>=16][zoom<=18] {
       [zoom>=16][zoom<=18] {
@@ -457,49 +479,50 @@
 
 #vector_linear_geometry_6 {
   ::major_road[rclass=1] {
-    [zoom=6] {line-width:0.3927;}
-    [zoom=7] {line-width:0.7854;}
+    [zoom=6] {line-width:0.4;}
+    [zoom=7] {line-width:0.5;}
   }
   ::freeway[rclass=0] {
-    [zoom>=6][zoom<=7] {
-      line-width:0.7854;
-    }
+    [zoom=6] {line-width:.5;}
+    [zoom=7] {line-width:.75;}
   }
 }
 
 #vector_linear_geometry_8 {
   ::major_road2-3[rclass<=2][rclass<=3] {
-    [zoom=8] {line-width:0.3927;}
-    [zoom=9] {line-width:0.7854;}
+    [zoom=8] {line-width:0.5;}
+    [zoom=9] {line-width:1;}
   }
   ::major_road1[rclass=1] {
-    [zoom>=8][zoom<=9] {line-width:1.1781;}
+    [zoom>=8][zoom<=9] {line-width:1;}
   }
-  ::freeway_ramp[rclass=0][ramp=true] {  /* includes free and toll ramps */
-    [zoom>=8][zoom<=9] {line-width:1.1781;}
+  ::freeway_ramp[rclass=0][ramp=true] {     /* includes free and toll ramps */
+    [zoom>=8][zoom<=9] {line-width:1;}
   }
   ::freeway[rclass=0][ramp!=true] {
-    [zoom=8] {line-width:1.5708;}
-    [zoom=9] {line-width:1.9635;}
+    [zoom=8] {line-width:1.5;}
+    [zoom=9] {line-width:2;}
   }
 }
 
 #vector_linear_geometry_10 {
   ::surface_ramp[rclass!=0][ramp=true] {
-    [zoom>=10][zoom<=11] {line-width:0.7854;}
+    [zoom>=10][zoom<=11] {line-width:0.5;}
   }
   ::major_road2-3[rclass<=2][rclass<=3] {
-    [zoom>=10][zoom<=11] {line-width:1.1781;}
+    [zoom>=10][zoom<=11] {line-width:1;}
   }
   ::major_road1[rclass=1] {
-    [zoom=10] {line-width:1.5708;}
-    [zoom=11] {line-width:1.7017;}
+    [zoom=10] {line-width:1.5;}
+    [zoom=11] {line-width:2;}
   }
-  ::freeway_ramp[rclass=0][ramp=true] {  /* includes free and toll ramps */
-    [zoom>=10][zoom<=11] {line-width:1.1781;}
+  ::freeway_ramp[rclass=0][ramp=true] {        /* includes free and toll ramps */
+    [zoom=10] {line-width:1;}
+    [zoom=11] {line-width:1.5;}
   }
   ::freeway[rclass=0][ramp!=true] {
-    [zoom>=10][zoom<=11] {line-width:1.9635;}
+    [zoom=10] {line-width:1.5;}
+    [zoom=11] {line-width:2;}
   }
 }
 

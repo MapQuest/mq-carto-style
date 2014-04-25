@@ -17,7 +17,7 @@
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "base",
-    "polygon",
+    "polygonal",
     "linear"
   ],
   "Layer": [
@@ -350,6 +350,34 @@
     {
       "geometry": "linestring",
       "extent": [
+        -166.53248206566,
+        7.997570932184111,
+        -52.7265114920263,
+        70.2870051667412
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "natearth_roads",
+        "key_field": "",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-166.53248206566,7.99757093218411,-52.7265114920263,70.2870051667412",
+        "host": "localhost",
+        "port": "5432",
+        "user": "markvahrenwald",
+        "password": "Lambkin94",
+        "dbname": "naturalearth"
+      },
+      "id": "natearth_roads",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "natearth_roads"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
         -126.39451099999985,
         24.57252980000002,
         -67.04390600000002,
@@ -516,32 +544,32 @@
       "name": "natearth_ocean_10m"
     },
     {
-      "geometry": "linestring",
+      "geometry": "polygon",
       "extent": [
-        -166.53248206566,
-        7.997570932184111,
-        -52.7265114920263,
-        70.2870051667412
+        -165.965618939309,
+        -50.6696248183775,
+        176.093829302878,
+        81.9552775253725
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "natearth_roads",
+        "table": "natearth_lakes_10m",
         "key_field": "",
         "geometry_field": "the_geom",
         "extent_cache": "auto",
-        "extent": "-166.53248206566,7.99757093218411,-52.7265114920263,70.2870051667412",
+        "extent": "-165.965618939309,-50.6696248183775,176.093829302878,81.9552775253725",
         "host": "localhost",
         "port": "5432",
         "user": "markvahrenwald",
         "password": "Lambkin94",
         "dbname": "naturalearth"
       },
-      "id": "natearth_roads",
+      "id": "natearth_lakes_10m",
       "class": "",
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "natearth_roads"
+      "name": "natearth_lakes_10m"
     }
   ],
   "scale": 1,
