@@ -6,8 +6,8 @@
   ::forest[rclass=3] {[zoom=6] {polygon-fill:#def2c4;}[zoom=7] {polygon-fill:#d3e6c0;}}
   ::park[rclass=8] {[zoom>=6][zoom<=7] {polygon-fill:#d4ebb5;}}
   ::heathland[rclass=5] {[zoom=7] {polygon-fill:#deecdb;}}
-  ::military[rclass=17] {[zoom>=6][zoom<=7] {polygon-fill:#dad9c7;}}
-  ::indigenous_lands[rclass=23] {[zoom=7] {polygon-fill:#e8e3c6;}}
+  ::military[rclass=17] {[zoom>=6][zoom<=7] {polygon-fill:#e5e4d1;}}
+  ::indigenous_lands[rclass=23] {[zoom=7] {polygon-fill:#f0ebd1;}}
   ::national_park[rclass=24] {[zoom=6] {polygon-fill:#def2c4;}[zoom=7] {polygon-fill:#d4ebb5;}}
   ::water[rclass=2] {[zoom>=6][zoom<=7] {polygon-fill:#b9c6d1;}}
   ::national_monument[rclass=25] {[zoom=7] {polygon-fill:#d4ebb5;}}

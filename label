@@ -1,0 +1,79 @@
+#vector_linear_labels {
+  /*
+  ::river[rclass=11][zoom>=16][zoom<=18] {
+    text-name:"[name]";
+    text-face-name:"Open Sans Regular";
+    text-size:10;
+    text-placement:line;
+    text-min-distance:400;
+  }
+  ::railroad[rclass=14][zoom>=16][zoom<=18] {
+    text-name:"[name]";
+    text-face-name:"Open Sans Regular";
+    text-size:10;
+    text-placement:line;
+    text-min-distance:400;
+  }
+  ::service_road[rclass=6][zoom>=15][zoom<=18] {
+    text-name:"[name]";
+    text-face-name:"Open Sans Regular";
+    text-size:10;
+    text-placement:line;
+    text-min-distance:400;
+  }
+  ::minor_road[rclass=5] {
+    text-name:"[name]";
+    text-face-name:"Open Sans Regular";
+    text-size:10;
+    text-placement:line;
+    text-min-distance:400;
+  }
+  ::major_road4[rclass=4][zoom>=14][zoom<=18] {
+    text-name:"[name]";
+    text-face-name:"Open Sans Regular";
+    text-size:10;
+    text-placement:line;
+    text-min-distance:400;
+  }
+*/
+  ::major_road2-3[rclass>=2][rclass<=3] {
+    [zoom>=12][zoom<=18] {
+      text-name:"[name]";text-face-name:"Open Sans Regular";text-placement:line;text-halo-radius:2;
+      [zoom>=12][zoom<=14] {
+        text-size:12;text-fill:#4d4d4d;text-min-distance:400;
+        [zoom=12] {text-halo-fill:@background_9-12;}
+        [zoom>=13][zoom<=14] {text-halo-fill:@background_13-15;}
+      }
+      [zoom>=15][zoom<=18] {
+        text-size:17;text-fill:#4d4d4d;text-min-distance:400;
+        [zoom=15] {text-halo-fill:@background_13-15;}
+        [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18;}
+      }
+    }
+  }
+
+  ::major_road1_text[rclass=1] {
+    [zoom>=11][zoom<=18] {
+      text-name:"[name]";text-face-name:"Open Sans Regular";text-placement:line;text-halo-radius:2;
+      [zoom>=11][zoom<=12] {
+        text-size:14;text-fill:#4d4d4d;text-min-distance:400;text-halo-fill:@background_9-12;
+      }
+      [zoom>=13][zoom<=15] {
+        text-size:17;text-fill:#4d4d4d;text-min-distance:400;text-halo-fill:@background_13-15;
+      }
+      [zoom>=16][zoom<=18] {
+        text-size:18;text-fill:#000000;text-min-distance:400;text-halo-fill:@background_16-18;
+      }
+    }
+  }
+}
+  
+  
+/*
+  [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6};
+  [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8};
+  [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12};
+  [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15};
+  [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18};
+  
+*/

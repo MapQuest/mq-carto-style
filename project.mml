@@ -1,14 +1,14 @@
 {
   "bounds": [
-    -124.1016,
-    45.3367,
-    -117.7734,
-    49.153
+    -105.0255,
+    39.7336,
+    -104.9686,
+    39.7668
   ],
   "center": [
-    -122.2524,
-    47.5534,
-    11
+    -104.9984,
+    39.7512,
+    15
   ],
   "format": "png",
   "interactivity": false,
@@ -18,7 +18,8 @@
   "Stylesheet": [
     "base",
     "polygonal",
-    "linear"
+    "linear",
+    "label"
   ],
   "Layer": [
     {
@@ -38,6 +39,62 @@
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "advanced": {},
       "name": "boundingbox"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.999989387104,
+        -85.051,
+        180,
+        85.051
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "natearth_ocean_10m",
+        "key_field": "",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-179.999989387104,-85.2219803557921,180,90.0000000000001",
+        "host": "localhost",
+        "port": "5432",
+        "user": "markvahrenwald",
+        "password": "Lambkin94",
+        "dbname": "naturalearth"
+      },
+      "id": "natearth_ocean_10m",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "natearth_ocean_10m"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -165.965618939309,
+        -50.6696248183775,
+        176.093829302878,
+        81.9552775253725
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "natearth_lakes_10m",
+        "key_field": "",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-165.965618939309,-50.6696248183775,176.093829302878,81.9552775253725",
+        "host": "localhost",
+        "port": "5432",
+        "user": "markvahrenwald",
+        "password": "Lambkin94",
+        "dbname": "naturalearth"
+      },
+      "id": "natearth_lakes_10m",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "natearth_lakes_10m"
     },
     {
       "geometry": "polygon",
@@ -516,60 +573,32 @@
       "name": "vector_linear_geometry_16"
     },
     {
-      "geometry": "polygon",
+      "geometry": "linestring",
       "extent": [
-        -179.999989387104,
-        -85.051,
-        180,
-        85.051
+        -127.46777200000005,
+        23.294272999999965,
+        -66.59790899999999,
+        53.77443900000002
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "natearth_ocean_10m",
+        "table": "vector_linear_labels",
         "key_field": "",
         "geometry_field": "the_geom",
         "extent_cache": "auto",
-        "extent": "-179.999989387104,-85.2219803557921,180,90.0000000000001",
+        "extent": "-14189647.4715931,2667644.98466023,-7413645.31777677,7127552.95023263",
         "host": "localhost",
         "port": "5432",
         "user": "markvahrenwald",
         "password": "Lambkin94",
-        "dbname": "naturalearth"
+        "dbname": "multinet"
       },
-      "id": "natearth_ocean_10m",
+      "id": "vector_linear_labels",
       "class": "",
-      "srs-name": "WGS84",
-      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "advanced": {},
-      "name": "natearth_ocean_10m"
-    },
-    {
-      "geometry": "polygon",
-      "extent": [
-        -165.965618939309,
-        -50.6696248183775,
-        176.093829302878,
-        81.9552775253725
-      ],
-      "Datasource": {
-        "type": "postgis",
-        "table": "natearth_lakes_10m",
-        "key_field": "",
-        "geometry_field": "the_geom",
-        "extent_cache": "auto",
-        "extent": "-165.965618939309,-50.6696248183775,176.093829302878,81.9552775253725",
-        "host": "localhost",
-        "port": "5432",
-        "user": "markvahrenwald",
-        "password": "Lambkin94",
-        "dbname": "naturalearth"
-      },
-      "id": "natearth_lakes_10m",
-      "class": "",
-      "srs-name": "WGS84",
-      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
-      "advanced": {},
-      "name": "natearth_lakes_10m"
+      "name": "vector_linear_labels"
     }
   ],
   "scale": 1,
