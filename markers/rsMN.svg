@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg1489" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="22.875" width="22.875" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata8">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Minnesota State Route marker</dc:title>
+    <dc:date>2006-09-29</dc:date>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Philipp Moore</dc:title>
+     </cc:Agent>
+    </dc:creator>
+    <dc:rights>
+     <cc:Agent>
+      <dc:title>PublicDomain</dc:title>
+     </cc:Agent>
+    </dc:rights>
+    <dc:subject>
+     <rdf:Bag/>
+    </dc:subject>
+    <cc:license rdf:resource="http://web.resource.org/cc/PublicDomain"/>
+   </cc:Work>
+   <cc:License rdf:about="http://web.resource.org/cc/PublicDomain">
+    <cc:permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+    <cc:permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+    <cc:permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+   </cc:License>
+  </rdf:RDF>
+ </metadata>
+ <rect id="yellow_ground" style="color:#000000" rx="1.301" ry="1.301" height="22.418" width="22.418" stroke="#5c4c03" y=".21960" x=".2375" stroke-width="0.475" fill="#f7d117"/>
+ <path id="blue_state_gylph" fill="#0550b4" d="m2.0308 3.6603c-0.0029-0.34-0.1339-0.6654-0.125-1.0066-0.0271-0.2243-0.1661-0.4386-0.1028-0.6698-0.0181-0.1355-0.0379-0.3614 0.1704-0.2835 0.2233 0.0002174 0.44661 0.0004348 0.66991 0.0006523 0.00314-0.080185 0.00629-0.16037 0.00943-0.24055 0.2502-0.027225 0.09511 0.33147 0.26567 0.40238 0.15754 0.020973 0.30837 0.13231 0.4581 0.11272 0.16426-0.15355 0.31182 0.038304 0.47343 0.082623 0.19562-0.024876 0.30592 0.26487 0.49144 0.17107 0.082164-0.091132 0.21159-0.10636 0.26886-0.028471 0.16163-0.077132 0.32355 0.048595 0.46889 0.037945-0.00855 0.14543-0.24533 0.13693-0.35522 0.21232-0.14332 0.053552-0.27262 0.15045-0.3389 0.29119-0.11128 0.20422-0.40385 0.26004-0.46152 0.49052 0.020213 0.18204-0.037717 0.35079-0.20491 0.43297-0.066756 0.17868 0.084421 0.36773 0.0003865 0.55539-0.047263 0.2185 0.15174 0.28368 0.29842 0.36798 0.14296 0.10859 0.25165 0.25822 0.4069 0.35129 0.13814 0.18207-0.1321 0.26319-0.26642 0.20504-0.68097 0.019091-1.3623 0.01774-2.0434 0.01982-0.0362-0.2576-0.01-0.519-0.019-0.7778 0.03-0.1907-0.0361-0.3787-0.1647-0.511-0.0085-0.0903 0.1413-0.1167 0.1-0.2162z"/>
+ <path id="blue_heart-2" style="color:#000000" d="m1.9517 20.22c0.028235 0.7778 0.024795 0.86092 0.72786 0.85554l17.707 0.01939c0.57099-0.01997 0.57737-0.11962 0.58006-0.80739l-0.0012-13.939h-19.053z" fill="#0550b4"/>
+</svg>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2454"
+   height="22.42"
+   width="22.4"
+   version="1.0"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="shield_hwy_or2.svg">
+  <defs
+     id="defs7919" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1283"
+     inkscape:window-height="1293"
+     id="namedview7917"
+     showgrid="false"
+     inkscape:zoom="42.105263"
+     inkscape:cx="10.25688"
+     inkscape:cy="10.229867"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2454" />
+  <metadata
+     id="metadata2459">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     id="path2479"
+     d="M 11.182251,21.59507 C 1.5356911,18.83987 0.26855114,10.25402 0.49535114,7.02842 0.92280614,3.373475 2.6201311,0.737765 11.182251,0.5495 c 7.45017,0.2665425 10.003455,2.025975 10.68795,6.4785 0.201128,4.909695 -2.11911,12.19365 -10.68795,14.5677 z"
+     style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.78750002;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:connector-curvature="0" />
+</svg>

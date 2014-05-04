@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg3882"
+   height="22.026293"
+   width="22.026337"
+   version="1.0"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="shield_hwy_ny2.svg">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1270"
+     inkscape:window-height="1186"
+     id="namedview8"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="10.58296"
+     inkscape:cx="-5.7121843"
+     inkscape:cy="11.01331"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g2448" />
+  <metadata
+     id="metadata6862">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g2480"
+     transform="matrix(0.037167,0,0,0.037167,-0.13718447,-0.13700485)">
+    <g
+       id="g2448"
+       transform="matrix(0.291669,0,0,0.291669,-665.88484,-11.889024)">
+      <path
+         id="path2452"
+         d="m 3311.6,101.83 c -214.53,0 -326.7,43.751 -460.59,142.32 -144.22,106.18 -310.36,173.91 -506.91,174.26 v 1141 c 0,101.35 0.1439,101.37 52.152,152.63 90.872,89.568 915.35,324.79 915.35,324.79 0,0 824.48,-235.22 915.35,-324.79 52.008,-51.261 52.152,-51.279 52.152,-152.63 v -1141 c -196.6,-0.33 -364.1,-65.9 -506.9,-174.24 -127.4,-96.68 -246.1,-142.33 -460.6,-142.33 z"
+         style="fill:#ffffff;stroke:#000000;stroke-width:69.18524498;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

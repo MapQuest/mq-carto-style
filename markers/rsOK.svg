@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg16935" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="22.5" width="22.5" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata16940">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-153.1 -682.48)">
+  <g id="g9142" transform="matrix(.057922 0 0 .057922 153.22 682.56)">
+   <g id="g9144" transform="matrix(1.0037 0 0 1.0037 -.99927 -.41313)">
+    <g id="g9160" transform="matrix(1.0293 0 0 1.0293 -5.6486 -5.6486)">
+     <g id="g9162">
+      <path id="path9164" d="m4.5 24.5c0-11.046 8.9541-20 20-20h336c11.046 0 20 8.9541 20 20v336c0 11.046-8.9541 20-20 20h-336c-11.046 0-20-8.96-20-20v-336z"/>
+     </g>
+    </g>
+    <g id="g9168" transform="matrix(.99173 0 0 .99173 1.5913 1.5913)">
+     <g id="g9170" fill="#fff">
+      <path id="path9172" d="m10.5 24.5c0-7.7319 6.2679-14 14-14h336c7.7319 0 14 6.2681 14 14v336c0 7.7319-6.2678 14-14 14h-336c-7.7319 0-14-6.2681-14-14v-336z"/>
+     </g>
+    </g>
+   </g>
+   <g id="g9176">
+    <polygon id="polygon9178" stroke="#000" points="27.7 50.1 338.1 50.1 338.1 70.9 355.7 133.3 355.7 219.7 328.5 210.1 310.9 214.9 301.3 221.3 278.9 210.1 264.5 218.1 248.5 208.5 238.9 211.7 230.9 206.9 221.3 211.7 192.5 198.9 192.5 198.9 187.7 189.3 182.9 192.5 171.7 189.3 168.5 186.1 163.7 190.9 147.7 181.3 146.1 174.9 146.1 77.3 27.7 77.3" clip-rule="evenodd" stroke-miterlimit="3.8637" stroke-width="8" fill="none"/>
+   </g>
+  </g>
+ </g>
+</svg>

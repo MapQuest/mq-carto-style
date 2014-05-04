@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1873"
+   height="24.497791"
+   width="24.497883"
+   version="1.0"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="shield_hwy_nc2.svg">
+  <defs
+     id="defs28746" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1275"
+     inkscape:window-height="1326"
+     id="namedview28744"
+     showgrid="false"
+     inkscape:zoom="2.64574"
+     inkscape:cx="-194.48674"
+     inkscape:cy="8.9856356"
+     inkscape:window-x="65"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata6183">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     transform="matrix(0.037167,0,0,0.037167,1.0988416,1.0987494)">
+    <path
+       id="rect2789"
+       d="m 329.40661,-5.79056 276.37995,276.37995 c 16.28896,16.28896 16.28896,42.5167 0,58.80567 l -276.3915,276.3915 c -16.28897,16.28896 -42.51671,16.28896 -58.80567,0 L -5.79056,329.40661 c -16.288965,-16.28897 -16.288965,-42.51671 0,-58.80567 L 270.58939,-5.79056 c 16.28896,-16.288965 42.5167,-16.288965 58.80567,0 z"
+       style="fill:#ffffff;stroke:#000000;stroke-width:23.30696487;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

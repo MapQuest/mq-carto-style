@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   height="22.3"
+   width="22.3"
+   version="1.0"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="shield_hwy_mo2.svg">
+  <defs
+     id="defs25755" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1324"
+     inkscape:window-height="1330"
+     id="namedview25753"
+     showgrid="false"
+     inkscape:zoom="25.807176"
+     inkscape:cx="16.67075"
+     inkscape:cy="9.2823593"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <metadata
+     id="metadata5815">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     transform="scale(.010324)"
+     style="stroke:#000000;stroke-opacity:1;stroke-width:72.64626114;stroke-miterlimit:4;stroke-dasharray:none">
+    <path
+       id="path2821"
+       d="m87.054 89.257h1495.1s58.018 71.159 62.481 109.11c4.4629 37.952-22.315 85.391 8.9259 113.85 31.241 28.464 142.81 170.78 142.81 218.22s22.315 113.85 35.704 132.83c13.389 18.976 71.407 75.903 93.722 128.09 22.315 52.183 40.167 407.98 40.167 407.98s174.06 407.98 142.81 483.88c-31.241 75.903-66.944 66.415-89.259 128.09-22.315 61.671-93.722 94.879-98.185 123.34-4.4629 28.464-40.167 132.83-40.167 132.83h-361.5s89.259-137.57 98.185-170.78c8.9259-33.208-22.315-80.647-22.315-80.647h-1289.8c-26.807 0-26.935-4.4476-26.778-28.464v-754.29s-31.241-327.33-49.093-450.68c-17.91-123.34-75.93-175.52-89.32-237.19s-67.677-195.52-75.871-218.22c-6.305-17.47 8.996-33.153 22.315-37.953z"
+       fill-rule="evenodd"
+       stroke="#000"
+       stroke-width="1.1388px"
+       fill="#fff"
+       style="stroke:#000000;stroke-opacity:1;stroke-width:72.64626114;stroke-miterlimit:4;stroke-dasharray:none" />
+  </g>
+</svg>

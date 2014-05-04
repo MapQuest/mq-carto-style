@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 12.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 51448)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   xml:space="preserve"
+   overflow="visible"
+   height="24.433931"
+   viewBox="0 0 30.280247 24.433931"
+   width="30.280247"
+   version="1.1"
+   enable-background="new 0 0 480 384"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="shield_hwy_vt3.svg"
+   style="overflow:visible"><defs
+   id="defs3003" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1729"
+   inkscape:window-height="1182"
+   id="namedview3001"
+   showgrid="false"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0"
+   inkscape:zoom="10.58296"
+   inkscape:cx="-1.487905"
+   inkscape:cy="12.216979"
+   inkscape:window-x="0"
+   inkscape:window-y="27"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="g5100" /><metadata
+   id="metadata5144"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata>
+<g
+   id="g5100"
+   transform="translate(1.2026033,-360.63305)">
+	<g
+   id="g5102"
+   transform="matrix(0.06089913,0,0,0.06089913,-0.67827073,361.15738)"
+   style="fill:#006b54;stroke:#ffffff;stroke-width:17.21970558;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none">
+		<path
+   id="path5104"
+   d="M 0,24 C 0,10.745 10.745,0 24,0 h 432 c 13.255,0 24,10.745 24,24 v 336 c 0,13.255 -10.745,24 -24,24 H 24 C 10.745,384 0,373.25 0,360 V 24 z"
+   style="stroke:#ffffff;stroke-width:17.21970558;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+   inkscape:connector-curvature="0" />
+		<path
+   id="path5106"
+   d="M 240,192"
+   style="stroke:#ffffff;stroke-width:17.21970558;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+   inkscape:connector-curvature="0" />
+	</g>
+	<path
+   id="path5108"
+   d="m 0.92917,375.87 c 0,-2.5583 0.87676,-4.9046 2.3362,-6.7342 h 21.345 c 1.4594,1.8296 2.3362,4.1759 2.3362,6.7342 0,2.5583 -0.87676,4.9046 -2.3362,6.7342 h -21.345 c -1.4594,-1.8296 -2.3362,-4.1759 -2.3362,-6.7342 z"
+   inkscape:connector-curvature="0"
+   style="fill:#ffffff" />
+	<g
+   id="g5110"
+   transform="matrix(0.058073,0,0,0.051124,0,361.87)"
+   style="fill:#ffffff">
+		<path
+   id="path5112"
+   d="m 16,40 c 0,-8.8369 7.1631,-16 16,-16 h 416 c 8.8369,0 16,7.1631 16,16 v 64 c 0,8.8369 -7.1631,16 -16,16 H 32 c -8.8369,0 -16,-7.1631 -16,-16 V 40 z"
+   inkscape:connector-curvature="0" />
+		<path
+   id="path5114"
+   d="M 240,72"
+   inkscape:connector-curvature="0" />
+	</g>
+</g>
+</svg>

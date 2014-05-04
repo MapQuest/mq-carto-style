@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 15.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   xml:space="preserve"
+   height="30px"
+   viewBox="0 0 30 30"
+   width="30px"
+   version="1.1"
+   y="0px"
+   x="0px"
+   enable-background="new 0 0 30 30"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="shield_hwy_us2.svg"><metadata
+   id="metadata9"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs7" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="938"
+   inkscape:window-height="649"
+   id="namedview5"
+   showgrid="false"
+   inkscape:zoom="7.8666667"
+   inkscape:cx="-29.745763"
+   inkscape:cy="15"
+   inkscape:window-x="0"
+   inkscape:window-y="27"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Layer_1" />
+<path
+   stroke="#282324"
+   stroke-width=".6277"
+   d="m8.321 4.001c1.192 1.243 2.325 2.047 3.345 2.047 1.109 0 2.77-0.805 3.324-2.047 0.551 1.243 2.259 2.047 3.365 2.047 1.023 0 2.151-0.805 3.321-2.047l4.025 3.65c-0.6 0.251-1.427 1.771-1.446 2.95 0 1.33 2.067 3.121 2.067 6.516 0 4.556-3.218 8.162-5.649 8.162-1.081 0-1.68-0.188-2.17-0.398-0.511-0.191-0.896-0.401-1.236-0.401-0.662 0-1.595 0.718-2.276 1.521-0.683-0.804-1.598-1.521-2.259-1.521-0.34 0-0.725 0.21-1.238 0.401-0.488 0.211-1.103 0.398-2.17 0.398-2.431 0-5.646-3.606-5.646-8.162 0-3.396 2.066-5.187 2.066-6.516 0-1.179-0.83-2.699-1.428-2.95l4.005-3.65z"
+   fill="#fff"
+   id="path3"
+   style="stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none" />
+</svg>

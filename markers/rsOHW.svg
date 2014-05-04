@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   height="22.3"
+   width="27.88"
+   version="1.0"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="shield_hwy_oh3.svg">
+  <defs
+     id="defs7911" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1261"
+     inkscape:window-height="1088"
+     id="namedview7909"
+     showgrid="false"
+     inkscape:zoom="21.16592"
+     inkscape:cx="13.988634"
+     inkscape:cy="9.8351425"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g3816" />
+  <title
+     id="title4">Ohio State Route 00</title>
+  <metadata
+     id="metadata6">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Ohio State Route 00</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g3816"
+     transform="matrix(.037167 0 0 .037167 0 7.6294e-7)">
+    <path
+       id="path8"
+       d="M 35.780147,33.432554 H 231.87815 c 15.24495,7.522935 33.14325,13.4085 52.70055,17.96235 19.5573,4.554165 42.29085,-5.921895 64.17075,-3.72225 10.93995,1.09977 19.77045,7.453215 30.9183,7.632765 11.14785,0.179603 24.61095,-5.814585 35.7168,-5.58495 22.2117,0.459249 28.9254,17.47515 63.1281,15.0213 20.4855,-1.46958 35.33985,-10.383975 55.6647,-16.3107 20.3238,-5.92725 46.1853,-8.064525 67.6536,-7.866705 41.10645,0.378714 82.21185,-16.14375 123.3225,-23.1357 l 2.14494,228.227996 c -21.6636,11.41245 -5.42441,30.59385 -6.87288,48.3966 -0.79164,9.72962 -2.47034,19.79355 -11.9406,24.9795 -9.43352,5.16579 -8.53125,17.40585 -4.08776,31.4475 5.88221,18.5871 -3.85024,37.24245 -8.51151,55.46415 -4.66116,18.2217 -14.13825,35.37975 -32.85765,50.2719 -18.31095,14.56875 -45.65925,39.14295 -77.98035,42.97965 -41.7228,4.95317 -55.6521,19.99095 -78.0633,39.1608 -10.33504,8.84058 -15.15045,11.34315 -39.2931,13.02735 -13.45785,0.93889 -9.97794,9.10203 -39.98715,10.49937 -29.61525,1.37897 -57.0906,14.86275 -74.7201,14.83965 -49.41825,-0.0639 -89.96925,-51.70095 -155.1165,-58.8504 -32.5164,-3.56905 -62.6115,-14.88585 -92.08605,-27.2244 -14.794498,-6.195 -28.993648,-18.48 -45.348448,-20.706 -19.6959,-2.667 -23.96415,-15.246 -37.72545,-20.5485 V 44.419334 c -0.468311,-7.45143 5.49822,-11.11215 13.07355,-10.983 z"
+       style="fill:#ffffff;stroke:#000000;stroke-width:21.18815041;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
