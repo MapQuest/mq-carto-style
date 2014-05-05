@@ -146,6 +146,17 @@
 }
 
 #vector_linear_geometry_10 {
+  ::ferry_hwy[rclass=13] {
+    [zoom>=10][zoom<=11] {
+      marker-type:ellipse;
+      marker-fill:#fff;
+      marker-height:1;
+      marker-width:2;
+      marker-placement:line;
+      marker-spacing:6;
+      marker-line-width:0.0;
+    }
+  }
   ::surface_ramp[rclass!=0][ramp=true] {
     [zoom>=10][zoom<=11] {line-color:#ebdaa0;line-cap:round;line-join:round;}
   }
@@ -176,6 +187,18 @@
 }
 
 #vector_linear_geometry_12 {
+  ::ferry_hwy[rclass=13] {
+    [zoom>=12][zoom<=15] {
+      marker-type:ellipse;
+      marker-fill:#fff;
+      marker-placement:line;
+      marker-line-width:0.0;
+      [zoom>=12][zoom<=13] {
+        marker-height:1;marker-width:3;marker-spacing:8;}
+      [zoom>=14][zoom<=15] {
+        marker-height:2;marker-width:4;marker-spacing:10;}
+    }
+  }
   ::river[rclass=11] {
     [zoom>=14][zoom<=15] {line-color:#b9c6d1;line-cap:round;line-join:round;}
   }

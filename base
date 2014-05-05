@@ -23,3 +23,12 @@
     polygon-fill:@background_16-18;
   }
 }
+
+
+#natearth_state_borders_10m {
+  [zoom>=4][zoom<=18] {
+    [iso='USA'],[iso='CAN'],[iso='AUS'] {
+      line-width:.5;line-color:#b8b38c;line-cap:round;line-join:round;
+    }
+  }
+}

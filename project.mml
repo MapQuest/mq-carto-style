@@ -19,7 +19,8 @@
     "base",
     "polygonal",
     "linear",
-    "label"
+    "point_label",
+    "linear_label"
   ],
   "Layer": [
     {
@@ -33,7 +34,10 @@
       "id": "boundingbox",
       "class": "",
       "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-900913-bounding-box.zip"
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-900913-bounding-box.zip",
+        "id": "boundingbox",
+        "project": "mq_raster_specs",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
       },
       "srs-name": "900913",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
@@ -599,6 +603,37 @@
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "advanced": {},
       "name": "vector_linear_labels"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -126.38600042468238,
+        24.60710786105276,
+        -67.06054782148605,
+        51.15169379277966
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT placement_id, label_id, min_zoom, max_zoom, the_geom, class, unnest(text_elements) AS name, display_class, feature_area, floor(random()*4) AS dir from (SELECT pl.*,(unnest(pr.labels)).* FROM vector_point_label_placements pl INNER JOIN vector_point_label_properties pr ON pl.label_id = pr.label_id) x ORDER BY display_class ASC) AS data",
+        "key_field": "",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-14069225.2106741,2827563.29156572,-7465146.0358058,6648170.59016609",
+        "host": "localhost",
+        "port": "5432",
+        "user": "markvahrenwald",
+        "password": "Lambkin94",
+        "dbname": "multinet",
+        "id": "vector_point_labels",
+        "project": "mq_raster_specs",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "id": "vector_point_labels",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "vector_point_labels"
     }
   ],
   "scale": 1,

@@ -1,0 +1,241 @@
+  /*
+  [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
+  [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
+  [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12}
+  [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
+  [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
+  */
+
+#vector_point_labels {
+  /*-----city labels——*/
+  ::national_capital[class=1000] {
+    text-name:"[name]";
+    text-face-name:"Open Sans Regular";
+    text-fill:#000000;
+    text-halo-radius:2;
+    text-transform:uppercase;
+    [zoom>=4][zoom<=13] {
+      marker-file:url("markers/capital1.svg");
+      text-dx:7;
+      text-dy:7;
+      text-placement-type:simple;
+      text-placements:"NE,NW,SE,SW,E,W";
+    }
+    [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
+    [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
+    [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12}
+    [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
+    [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
+    [display_class=0] {
+      [zoom>=4][zoom<=5] {text-size:16}
+      [zoom=6] {text-size:17}
+      [zoom>=7][zoom<=9] {text-size:18}
+      [zoom>=10][zoom<=11] {text-size:22}
+      [zoom>=12][zoom<=18] {text-size:24}
+    }
+    [display_class=1] {
+      [zoom>=4][zoom<=5] {text-size:13}
+      [zoom>=6][zoom<=7] {text-size:14}
+      [zoom>=8][zoom<=9] {text-size:16}
+      [zoom>=10][zoom<=11] {text-size:18}
+      [zoom>=12][zoom<=18] {text-size:23}
+    }
+    [display_class=2] {
+      [zoom>=4][zoom<=5] {text-size:10}
+      [zoom>=6][zoom<=7] {text-size:12}
+      [zoom>=8][zoom<=9] {text-size:13}
+      [zoom>=10][zoom<=11] {text-size:16}
+      [zoom>=11][zoom<=18] {text-size:21}
+    }
+    [display_class=3] {
+      [zoom>=4][zoom<=9] {text-size:12}
+      [zoom>=10][zoom<=11] {text-size:14}
+      [zoom>=12][zoom<=18] {text-size:18}
+    }
+    [display_class>3] {
+      [zoom>=4][zoom<=9] {text-size:10}
+      [zoom>=10][zoom<=18] {text-size:12}
+    }
+  }
+  ::state_capital[class=1010] {
+    text-name:"[name]";
+    text-face-name:"Open Sans Regular";
+    text-fill:#000000;
+    text-halo-radius:2;
+    [zoom>=13][zoom<=18] {text-transform:uppercase;}
+    [zoom>=4][zoom<=13] {
+      marker-file:url("markers/capital2.svg");
+      text-dx:7;
+      text-dy:7;
+      text-placement-type:simple;
+      text-placements:"NE,NW,SE,SW,E,W";
+    }
+    [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
+    [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
+    [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12}
+    [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
+    [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
+    [display_class=0] {
+      [zoom>=4][zoom<=5] {text-size:16}
+      [zoom=6] {text-size:17}
+      [zoom>=7][zoom<=9] {text-size:18}
+      [zoom>=10][zoom<=11] {text-size:22}
+      [zoom>=12][zoom<=18] {text-size:24}
+    }
+    [display_class=1] {
+      [zoom>=4][zoom<=5] {text-size:13}
+      [zoom>=6][zoom<=7] {text-size:14}
+      [zoom>=8][zoom<=9] {text-size:16}
+      [zoom>=10][zoom<=11] {text-size:18}
+      [zoom>=12][zoom<=18] {text-size:23}
+    }
+    [display_class=2] {
+      [zoom>=4][zoom<=5] {text-size:10}
+      [zoom>=6][zoom<=7] {text-size:12}
+      [zoom>=8][zoom<=9] {text-size:13}
+      [zoom>=10][zoom<=11] {text-size:16}
+      [zoom>=11][zoom<=18] {text-size:21}
+    }
+    [display_class=3] {
+      [zoom>=4][zoom<=9] {text-size:12}
+      [zoom>=10][zoom<=11] {text-size:14}
+      [zoom>=12][zoom<=18] {text-size:18}
+    }
+    [display_class>3] {
+      [zoom>=4][zoom<=9] {text-size:10}
+      [zoom>=10][zoom<=18] {text-size:12}
+    }
+  }
+  ::city[class=1020] {
+    text-name:"''";
+    text-face-name:"Open Sans Regular";
+    text-fill:#000000;
+    text-halo-radius:1;
+    [display_class=0][zoom>=13][zoom<=18] {text-transform:uppercase;}
+    [zoom>=4][zoom<=13] {
+      text-dx:7;
+      text-dy:7;
+      text-placement-type:simple;
+      text-placements:"NE,NW,SE,SW,E,W";
+      [display_class=0] {marker-file:url("markers/city1.svg");}
+      [display_class=1] {marker-file:url("markers/city2.svg");}
+      [display_class=2][zoom>5][zoom<=18] {marker-file:url("markers/city2.svg");}
+      [display_class>=3][zoom>=6][zoom<=18] {marker-file:url("markers/city3.svg");}
+    }
+    [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
+    [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
+    [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12}
+    [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
+    [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
+    [display_class=0] {
+      text-name:"[name]";
+      text-face-name:"Open Sans Regular";
+      [zoom>=4][zoom<=5] {text-size:14}
+      [zoom=6] {text-size:17}
+      [zoom>=7][zoom<=9] {text-size:16}
+      [zoom>=10][zoom<=11] {text-size:20}
+      [zoom>=11][zoom<=18] {text-size:22}
+    }
+    [display_class=1] {
+      text-name:"[name]";
+      text-face-name:"Open Sans Regular";
+      [zoom>=4][zoom<=5] {text-size:13; text-fill:#4d4d4d;}
+      [zoom>=6][zoom<=7] {text-size:14}
+      [zoom>=8][zoom<=9] {text-size:16}
+      [zoom>=10][zoom<=11] {text-size:18}
+      [zoom>=12][zoom<=18] {text-size:23}
+    }
+    [display_class=2][zoom>=5][zoom<=18] {
+      text-name:"[name]";
+      text-face-name:"Open Sans Regular";
+      text-fill:#4d4d4d;
+      [zoom>=4][zoom<=5] {text-size:10}
+      [zoom>=6][zoom<=7] {text-size:12}
+      [zoom>=8][zoom<=9] {text-size:13}
+      [zoom>=10][zoom<=11] {text-size:16}
+      [zoom>=11][zoom<=18] {text-size:21}
+    }
+    [display_class=3][zoom>=6][zoom<=18] {
+      text-name:"[name]";
+      text-face-name:"Open Sans Regular";
+      text-fill:#666666;
+      [zoom>=4][zoom<=9] {text-size:12}
+      [zoom>=10][zoom<=11] {text-size:14}
+      [zoom>=12][zoom<=18] {text-size:18}
+    }
+    [display_class>3][zoom>=7][zoom<=18] {
+      text-name:"[name]";
+      text-face-name:"Open Sans Regular";
+      text-fill:#666666;
+      [zoom>=4][zoom<=9] {text-size:10}
+      [zoom>=10][zoom<=18] {text-size:12;}
+    }
+    [display_class>4][zoom>=7][zoom<=18] {text-fill:#808080;}
+  }
+  
+  /*-----county labels——*/
+  ::county_labels[class=1038][zoom=9] {
+    text-face-name:"Open Sans Bold";
+    text-fill:#9e6c58;
+    text-transform:uppercase;
+    text-halo-fill:#fbfaf6;
+    text-halo-radius:2;
+    text-size:12;
+    text-name:"[name]";
+  }
+  /*-----state labels——*/
+  ::state_labels[class=1031][zoom>=5][zoom<=9] {
+    text-face-name:"Open Sans Bold";
+    text-fill:#b3a098;
+    text-transform:uppercase;
+    text-halo-fill:#fbfaf6;
+    text-halo-radius:2;
+    text-size:12;
+    text-name:"[name]";
+    text-character-spacing:.5;
+  }
+  /*-----country labels——*/
+  ::country_labels[class=1030][zoom>=4][zoom<=9] {
+    ::display_class0[display_class=0] {
+      text-name:"[name]";
+      text-face-name:"Open Sans Bold";
+      text-fill:#9e887e;
+      text-transform:uppercase;
+      text-halo-fill:#fbfaf6;
+      text-halo-radius:2;
+      [zoom>=4][zoom<=5] {text-size:15;}
+      [zoom>=6][zoom<=7] {text-size:18;}
+      [zoom>=8][zoom<=9] {text-size:22;}
+    }
+    ::display_class1[display_class=1] {
+      text-name:"[name]";
+      text-face-name:"Open Sans Bold";
+      text-fill:#9e887e;
+      text-halo-fill:#fbfaf6;
+      text-halo-radius:2;
+      [zoom>=4][zoom<=5] {text-size:13;}
+      [zoom>=6][zoom<=7] {text-size:15;}
+      [zoom>=8][zoom<=9] {text-size:18;}
+    }
+    ::display_class2[display_class=2] {
+      text-name:"[name]";
+      text-face-name:"Open Sans Bold";
+      text-fill:#9e887e;
+      text-halo-fill:#fbfaf6;
+      text-halo-radius:2;
+      [zoom>=4][zoom<=5] {text-size:12;}
+      [zoom>=6][zoom<=7] {text-size:13;}
+      [zoom>=8][zoom<=9] {text-size:15;}
+    }
+    ::display_class3[display_class=3] {
+      text-name:"[name]";
+      text-face-name:"Open Sans Bold";
+      text-fill:#9e887e;
+      text-halo-fill:#fbfaf6;
+      text-halo-radius:2;
+      [zoom>=4][zoom<=5] {text-size:11;}
+      [zoom>=6][zoom<=7] {text-size:12;}
+      [zoom>=8][zoom<=9] {text-size:13;}
+    }
+  }
+}
