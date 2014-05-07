@@ -1,30 +1,30 @@
 #vector_linear_labels {
   ::river[rclass=11][zoom>=16][zoom<=18] {
     text-name:"[name]";text-face-name:"Open Sans Italic";text-placement:line;
-    text-halo-radius:2;text-min-distance:300;text-character-spacing:1;text-fill:#4a7bd4;
+    text-halo-radius:2;text-min-padding:100;text-character-spacing:1;text-fill:#4a7bd4;
     text-size:13;text-halo-fill:@background_16-18
   }
   ::railroad[rclass=14][zoom>=16][zoom<=18] {
     text-name:"[name]";text-face-name:"Open Sans Italic";text-placement:line;
-    text-halo-radius:2;text-min-distance:300;text-character-spacing:1;text-fill:#666666;
+    text-halo-radius:2;text-min-padding:100;text-character-spacing:1;text-fill:#666666;
     text-size:13;text-halo-fill:@background_16-18
   }
   ::ferry[rclass=13][zoom>=12][zoom<=18] {
     text-name:"[name]";text-face-name:"Open Sans Italic";text-placement:line;
-    text-min-distance:300;text-character-spacing:1;text-fill:#4a7bd4;
+    text-min-padding:100;text-character-spacing:1;text-fill:#4a7bd4;
     [zoom=12] {text-size:10;}
     [zoom>=13][zoom<=15] {text-size:11;}
     [zoom>=16][zoom<=18] {text-size:13;}
   }
   ::service_road[rclass=6][zoom>=15][zoom<=18] {
     text-name:"[name]";text-face-name:"Open Sans Regular";text-placement:line;
-    text-halo-radius:2;text-min-distance:300;text-character-spacing:1;text-fill:#666666;
+    text-halo-radius:2;text-min-padding:100;text-character-spacing:1;text-fill:#666666;
     [zoom=15] {text-size:11;text-halo-fill:@background_13-15;}
     [zoom>=16][zoom<=18] {text-size:13;text-halo-fill:@background_16-18;}
   }
   ::minor_road[rclass=5][zoom>=14][zoom<=18] {
     text-name:"[name]";text-face-name:"Open Sans Regular";text-placement:line;
-    text-halo-radius:2;text-min-distance:300;text-character-spacing:1;
+    text-halo-radius:2;text-min-padding:100;text-character-spacing:1;
     [zoom=14] {text-fill:#666666;text-halo-fill:@background_13-15;text-size:10;}
     [zoom>=15][zoom<=18] {text-fill:#666666;
       [zoom=15] {text-size:11;text-halo-fill:@background_13-15;}
@@ -33,7 +33,7 @@
   }
   ::major_road4[rclass=4][zoom>=14][zoom<=18] {
     text-name:"[name]";text-face-name:"Open Sans Regular";text-placement:line;
-    text-halo-radius:2;text-min-distance:300;text-character-spacing:1;
+    text-halo-radius:2;text-min-padding:100;text-character-spacing:1;
     [zoom=14] {text-fill:#666666;text-halo-fill:@background_13-15;text-size:10;}
     [zoom>=15][zoom<=18] {text-fill:#666666;
       [zoom=15] {text-size:11;text-halo-fill:@background_13-15;}
@@ -43,7 +43,7 @@
   ::major_road2-3[rclass>=2][rclass<=3] {
     [zoom>=12][zoom<=18] {
       text-name:"[name]";text-face-name:"Open Sans Regular";text-placement:line;
-      text-halo-radius:2;text-min-distance:100;text-character-spacing:1;
+      text-halo-radius:2;text-min-padding:30;text-character-spacing:1;
       [zoom>=12][zoom<=14] {text-fill:#4d4d4d;
         [zoom=12] {text-size:10;text-halo-fill:@background_9-12;}
         [zoom>=13][zoom<=14] {text-halo-fill:@background_13-15;
@@ -60,7 +60,7 @@
   ::major_road1_text[rclass=1] {
     [zoom>=11][zoom<=18] {
       text-name:"[name]";text-face-name:"Open Sans Regular";text-placement:line;
-      text-halo-radius:2;text-min-distance:100;text-character-spacing:1;
+      text-halo-radius:2;text-min-padding:30;text-character-spacing:1;
       [zoom>=11][zoom<=12] {
         text-size:11;text-fill:#4d4d4d;text-halo-fill:@background_9-12;
       }
@@ -77,7 +77,7 @@
   ::lane_text[rclass=16] {
     [zoom>=12][zoom<=18] {
       text-name:"[name]";text-face-name:"Open Sans Regular";text-placement:line;
-      text-halo-radius:2;text-min-distance:100;text-character-spacing:1;text-transform:uppercase;
+      text-halo-radius:2;text-min-padding:30;text-character-spacing:1;text-transform:uppercase;
       [zoom=12] {
         text-size:11;text-fill:#4d4d4d;text-halo-fill:@background_9-12;
       }
@@ -94,7 +94,7 @@
   ::freeway_text[rclass=0] {
     [zoom>=12][zoom<=18] {
       text-name:"[name]";text-face-name:"Open Sans Regular";text-placement:line;
-      text-halo-radius:2;text-min-distance:100;text-character-spacing:1;text-transform:uppercase;
+      text-halo-radius:2;text-min-padding:30;text-character-spacing:1;text-transform:uppercase;
       [zoom=12] {
         text-size:11;text-fill:#4d4d4d;text-halo-fill:@background_9-12;
       }
