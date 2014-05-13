@@ -30,10 +30,7 @@
 @city_text_1_45:11;
 @city_text_2_45:11;
 
-#vector_point_labels::batch1 {
-
-  /*-----exit labels——*/
-  ::exit[class=1040] {[zoom>=12][zoom<=14] {marker-file:url("markers/exitPt.svg");marker-ignore-placement:true;}}
+#vector_point_labels::admin {
 
   /*-----country labels——*/
   ::country_labels[class=1030][zoom>=4][zoom<=9] {
@@ -44,6 +41,8 @@
       text-transform:uppercase;
       text-halo-fill:#fbfaf6;
       text-halo-radius:2;
+      text-wrap-width:20;
+      text-avoid-edges:true;
       [zoom>=4][zoom<=5] {text-size:15;}
       [zoom>=6][zoom<=7] {text-size:18;}
       [zoom>=8][zoom<=9] {text-size:22;}
@@ -54,6 +53,8 @@
       text-fill:#9e887e;
       text-halo-fill:#fbfaf6;
       text-halo-radius:2;
+      text-wrap-width:20;
+      text-avoid-edges:true;
       [zoom>=4][zoom<=5] {text-size:13;}
       [zoom>=6][zoom<=7] {text-size:15;}
       [zoom>=8][zoom<=9] {text-size:18;}
@@ -64,6 +65,8 @@
       text-fill:#9e887e;
       text-halo-fill:#fbfaf6;
       text-halo-radius:2;
+      text-wrap-width:20;
+      text-avoid-edges:true;
       [zoom>=4][zoom<=5] {text-size:12;}
       [zoom>=6][zoom<=7] {text-size:13;}
       [zoom>=8][zoom<=9] {text-size:15;}
@@ -74,6 +77,8 @@
       text-fill:#9e887e;
       text-halo-fill:#fbfaf6;
       text-halo-radius:2;
+      text-wrap-width:20;
+      text-avoid-edges:true;
       [zoom>=4][zoom<=5] {text-size:11;}
       [zoom>=6][zoom<=7] {text-size:12;}
       [zoom>=8][zoom<=9] {text-size:13;}
@@ -87,11 +92,14 @@
     text-transform:uppercase;
     text-halo-fill:#fbfaf6;
     text-halo-radius:2;
+    text-wrap-width:20;
     text-size:12;
     text-name:"[name] + ' County'";
     text-character-spacing:2;
     text-wrap-width:20;
+    text-avoid-edges:true;
   }
+
   /*-----state labels——*/
   ::state_labels[class=1031][zoom>=5][zoom<=9] {
     text-face-name:"Open Sans Semibold";
@@ -99,9 +107,11 @@
     text-transform:uppercase;
     text-halo-fill:#fbfaf6;
     text-halo-radius:2;
+    text-wrap-width:20;
     text-size:12;
     text-name:"[name]";
     text-character-spacing:.5;
+    text-avoid-edges:true;
     [zoom>=8][zoom<=9] {
       text-character-spacing:2;
     }
@@ -118,6 +128,7 @@
       shield-text-transform:uppercase;
       shield-file:url("markers/capital1.svg");
       shield-min-distance:15;
+      shield-avoid-edges:true;
       [zoom>=2][zoom<=6] {shield-halo-fill:@background_2-6}
       [zoom>=7][zoom<=8] {shield-halo-fill:@background_7-8}
       [zoom>=9][zoom<=12] {shield-halo-fill:@background_9-12}
@@ -173,6 +184,8 @@
       text-face-name:"Open Sans Regular";
       text-fill:#000000;
       text-halo-radius:1;
+      text-wrap-width:20;
+      text-avoid-edges:true;
       [display_class=0][zoom>=13][zoom<=18] {text-transform:uppercase;}
       [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
       [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
@@ -218,6 +231,7 @@
       shield-halo-radius:1;
       shield-file:url("markers/capital2.svg");
       shield-min-distance:15;
+      shield-avoid-edges:true;
       [zoom>=2][zoom<=6] {shield-halo-fill:@background_2-6}
       [zoom>=7][zoom<=8] {shield-halo-fill:@background_7-8}
       [zoom>=9][zoom<=12] {shield-halo-fill:@background_9-12}
@@ -273,6 +287,8 @@
       text-face-name:"Open Sans Regular";
       text-fill:#000000;
       text-halo-radius:1;
+      text-wrap-width:20;
+      text-avoid-edges:true;
       [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
       [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
       [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12}
@@ -318,6 +334,7 @@
         shield-min-distance:0;
         shield-file:url("markers/city1.svg");
         shield-halo-radius:1;
+        shield-avoid-edges:true;
         [zoom>=4][zoom<=5] {shield-size:@city_text_0_45;shield-text-dy:-13;}
         [zoom=6] {shield-size:@city_text_0_6;shield-text-dy:-14;}
         [zoom>=7][zoom<=9] {shield-size:@city_text_0_789;shield-text-dy:-15;}
@@ -337,6 +354,7 @@
         shield-min-distance:15;
         shield-file:url("markers/city2.svg");
         shield-halo-radius:1;
+        shield-avoid-edges:true;
         [zoom>=4][zoom<=5] {shield-size:@city_text_1_45;shield-text-dy:-12; shield-fill:#4d4d4d;}
         [zoom>=6][zoom<=7] {shield-size:@city_text_1_67;shield-text-dy:-13;}
         [zoom>=8][zoom<=9] {shield-size:@city_text_1_89;shield-text-dy:-14;}
@@ -355,6 +373,7 @@
         shield-min-distance:30;
         shield-file:url("markers/city2.svg");
         shield-halo-radius:1;
+        shield-avoid-edges:true;
         [zoom>=4][zoom<=5] {shield-size:@city_text_2_45;shield-text-dy:-11;}
         [zoom>=6][zoom<=7] {shield-size:@city_text_2_67;shield-text-dy:-12;}
         [zoom>=8][zoom<=9] {shield-size:@city_text_2_89;shield-text-dy:-13;}
@@ -373,6 +392,7 @@
         shield-min-distance:45;
         shield-file:url("markers/city3.svg");
         shield-halo-radius:1;
+        shield-avoid-edges:true;
         [zoom>=4][zoom<=9] {shield-size:@city_text_3_456789;shield-text-dy:-10;}
         [zoom>=10][zoom<=11] {shield-size:@city_text_3_1011;shield-text-dy:-11;}
         [zoom>=12][zoom<=13] {shield-size:@city_text_3_1213;shield-text-dy:-12;}
@@ -389,6 +409,7 @@
         shield-min-distance:50;
         shield-file:url("markers/city3.svg");
         shield-halo-radius:1;
+        shield-avoid-edges:true;
         [zoom>=4][zoom<=9] {shield-size:@city_text_4_456789;shield-text-dy:-10;}
         [zoom>=10][zoom<=13] {shield-size:@city_text_4_10111213;shield-text-dy:-11;}
         [zoom>=2][zoom<=6] {shield-halo-fill:@background_2-6}
@@ -402,6 +423,7 @@
         shield-min-distance:50;
         shield-file:url("markers/city3.svg");
         shield-halo-radius:1;
+        shield-avoid-edges:true;
         [zoom>=2][zoom<=6] {shield-halo-fill:@background_2-6}
         [zoom>=7][zoom<=8] {shield-halo-fill:@background_7-8}
         [zoom>=9][zoom<=12] {shield-halo-fill:@background_9-12}
@@ -415,6 +437,8 @@
       text-face-name:"Open Sans Regular";
       text-fill:#000000;
       text-halo-radius:1;
+      text-wrap-width:20;
+      text-avoid-edges:true;
       [display_class=0][zoom>=13][zoom<=18] {text-transform:uppercase;}
       [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
       [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
@@ -453,314 +477,303 @@
   }
 }
 
-/* regular expression to count number of characters only works at the top level of a layer definition */
-#vector_point_labels::exit1[name=~"."] {[zoom>=15][zoom<=18][class=1040] {
+#vector_point_labels::exit_shields[zoom>=15][zoom<=18][class=1040] {
+  ::shield[class=1040] {[zoom>=13][zoom<=14] {marker-file:url("markers/exitPt.svg");marker-ignore-placement:true;}}
+  ::number {
     shield-name:"[name]";
     shield-face-name:"Open Sans Bold";
     shield-fill:#ffffff;
+    shield-min-distance:15;
+    shield-size:11;
     shield-file:url("markers/exit1.svg");
-    shield-min-distance:15;
-    shield-size:11;
-  }
-}
-#vector_point_labels::exit2[name=~".."] {[zoom>=15][zoom<=18][class=1040] {
-    shield-name:"[name]";
-    shield-face-name:"Open Sans Bold";
-    shield-fill:#ffffff;
-    shield-file:url("markers/exit2.svg");
-    shield-min-distance:15;
-    shield-size:11;
-  }
-}
-#vector_point_labels::exit3[name=~"..."] {[zoom>=15][zoom<=18][class=1040] {
-    shield-name:"[name]";
-    shield-face-name:"Open Sans Bold";
-    shield-fill:#ffffff;
-    shield-file:url("markers/exit3.svg");
-    shield-min-distance:15;
-    shield-size:11;
-  }
-}
-#vector_point_labels::exit4[name=~"...."] {[zoom>=15][zoom<=18][class=1040] {
-    shield-name:"[name]";
-    shield-face-name:"Open Sans Bold";
-    shield-fill:#ffffff;
-    shield-file:url("markers/exit4.svg");
-    shield-min-distance:15;
-    shield-size:11;
-  }
-}
-#vector_point_labels::exit5[name=~"....."] {[zoom>=15][zoom<=18][class=1040] {
-    shield-name:"[name]";
-    shield-face-name:"Open Sans Bold";
-    shield-fill:#ffffff;
-    shield-file:url("markers/exit5.svg");
-    shield-min-distance:15;
-    shield-size:11;
-  }
-}
-#vector_point_labels::exit6[name=~"......"] {[zoom>=15][zoom<=18][class=1040] {
-    shield-name:"[name]";
-    shield-face-name:"Open Sans Bold";
-    shield-fill:#ffffff;
-    shield-file:url("markers/exit6.svg");
-    shield-min-distance:15;
-    shield-size:11;
+    shield-avoid-edges:true;
+    [name_len=1] {shield-file:url("markers/exit1.svg");}
+    [name_len=2] {shield-file:url("markers/exit2.svg");}
+    [name_len=3] {shield-file:url("markers/exit3.svg");}
+    [name_len=4] {shield-file:url("markers/exit4.svg");}
+    [name_len=5] {shield-file:url("markers/exit5.svg");}
+    [name_len=6] {shield-file:url("markers/exit6.svg");}
   }
 }
 
-/*  shields go here  */
+#vector_point_labels::hwy_shield[class>=1][class<=591][zoom>=6][zoom<=18] {
+  [class>=1][class<=2] {
+    shield-name:"[name]";
+    shield-face-name:"Open Sans Bold";
+    shield-fill:#000000;
+    shield-size:11;
+    shield-text-dy:1;
+    shield-avoid-edges:true;
+    shield-file:url("markers/poi.svg");
+    [zoom>=6][zoom<=10] {shield-min-distance:40;}
+    [zoom=11] {shield-min-distance:125;}
+    [zoom=12] {shield-min-distance:125;}
+    [zoom=13] {shield-min-distance:125;}
+    [zoom=14] {shield-min-distance:125;}
+    [zoom=15] {shield-min-distance:100;}
+    [zoom=16] {shield-min-distance:100;}
+    [zoom=17] {shield-min-distance:150;}
+    [zoom=18] {shield-min-distance:150;}
 
-#vector_point_labels::batch2 {
+    /* US shields */
+    [class=1] {
+      shield-face-name:"Open Sans Bold";
+      shield-fill:#ffffff;
+      [name_len<=2] {shield-file:url("markers/rsInterstate.svg");}
+      [name_len>=3] {shield-file:url("markers/rsInterstateW.svg");}
+    }
+    [class=2] {
+      shield-face-name:"Open Sans Bold";
+      [name_len<=2] {shield-file:url("markers/rsUS.svg");}
+      [name_len<=3] {shield-file:url("markers/rsUSW.svg");}
+    }
+  }
+  [class>=3][class<=591][zoom>=7][zoom<=18] {
+    shield-name:"[name]";
+    shield-face-name:"Open Sans Bold";
+    shield-fill:#000000;
+    shield-size:11;
+    shield-text-dy:1;
+    shield-avoid-edges:true;
+    shield-file:url("markers/poi.svg");
+    [class>=3][class<=591] {
+      [zoom>=7][zoom<=10] {shield-min-distance:60;}
+      [zoom=11] {shield-min-distance:200;}
+      [zoom=12] {shield-min-distance:200;}
+      [zoom=13] {shield-min-distance:200;}
+      [zoom=14] {shield-min-distance:200;}
+      [zoom=15] {shield-min-distance:200;}
+      [zoom=16] {shield-min-distance:200;}
+      [zoom=17] {shield-min-distance:300;}
+      [zoom=18] {shield-min-distance:300;}
+    }
+    /* US shields */
+    [class=3] {
+      [name_len<=2] {shield-file:url("markers/rsRound.svg");}
+      [name_len<=3] {shield-file:url("markers/rsRoundW.svg");}
+    }
+    [class=4] {
+      [name_len<=3] {shield-file:url("markers/rsWhite3.svg");}
+      [name_len=4] {shield-file:url("markers/rsWhite4.svg");}
+      [name_len=5] {shield-file:url("markers/rsWhite5.svg");}
+      [name_len<=6] {shield-file:url("markers/rsWhite6.svg");}
+    }
+
+  /* Canada shields */
+    [class=20] {shield-file:url("markers/rsTCH.svg");shield-text-dy:0;shield-fill:#259425;shield-halo-fill:#ffffff;shield-halo-radius:1;}
+    [class=21] {
+      shield-fill:#ffffff;
+      [name_len<=2] {shield-file:url("markers/rsQCA.svg");}
+      [name_len=3] {shield-file:url("markers/rsQCAW.svg");}
+      [name_len>=4] {shield-file:url("markers/rsQCAW2.svg");}
+    }
+    [class=22] {
+      [name_len<=2] {shield-file:url("markers/rsRound.svg");}
+      [name_len>=3] {shield-file:url("markers/rsRound.svg");}
+    }
+    [class=23] {shield-file:url("markers/rsWhite3.svg");}
+
+    /* Mexico shields */
+    [class=40] {
+      shield-text-dy:-1;
+      [name_len<=2] {shield-file:url("markers/rsMex.svg");}
+      [name_len=3] {shield-file:url("markers/rsMexW.svg");}
+      [name_len>=4] {shield-file:url("markers/rsMexW2.svg");}
+    }
+    [class=42] {
+      shield-text-dy:-1.5;
+      [name_len<=2] {shield-file:url("markers/rsMexS.svg");}
+      [name_len>=3] {shield-file:url("markers/rsMexSW.svg");}
+    }
+ 
+    /* US state shields */
+    [class=500] {
+      shield-text-dy:-1;
+      [name_len<=2] {shield-file:url("markers/rsAL.svg");}
+      [name_len>=3] {shield-file:url("markers/rsALW.svg");}
+    }
+    [class=501] {
+      shield-text-dy:-1;shield-text-dx:2.5;
+      [name_len<=2] {shield-file:url("markers/rsAK.svg");}
+      [name_len>=3] {shield-file:url("markers/rsAKW.svg");}
+    }
+    [class=502] {
+      shield-text-dy:0;
+      [name_len<=2] {shield-file:url("markers/rsAZ.svg");}
+      [name_len>=3] {shield-file:url("markers/rsAZW.svg");}
+    }
+    [class=503] {
+      shield-text-dy:-1;shield-text-dx:-1;
+      [name_len<=2] {shield-file:url("markers/rsAR.svg");}
+      [name_len>=3] {shield-file:url("markers/rsARW.svg");}
+    }
+    [class=504] {
+      shield-text-dy:1;shield-fill:#ffffff;
+      [name_len<=2] {shield-file:url("markers/rsCA.svg");}
+      [name_len>=3] {shield-file:url("markers/rsCAW.svg");}
+    }
+    [class=505] {
+      shield-text-dy:4;
+      [name_len<=2] {shield-file:url("markers/rsCO.svg");}
+      [name_len>=3] {shield-file:url("markers/rsCOW.svg");}
+    }
+    [class=508] {
+      shield-text-dy:2;shield-text-dx:-1;}
+      [name_len<=2] {shield-file:url("markers/rsFL.svg");}
+      [name_len>=3] {shield-file:url("markers/rsFLW.svg");}
+    [class=509] {
+      shield-text-dy:1;shield-text-dx:-1;
+      [name_len<=2] {shield-file:url("markers/rsGA.svg");}
+      [name_len>=3] {shield-file:url("markers/rsGAW.svg");}
+    }
+    [class=510] {shield-file:url("markers/rsHI.svg");shield-text-dy:1;}
+    [class=511] {
+      shield-text-dy:-3;shield-text-dx:2;shield-fill:#ffffff;
+      [name_len<=2] {shield-file:url("markers/rsID.svg");}
+      [name_len>=3] {shield-file:url("markers/rsIDW.svg");}
+    }
+    [class=515] {
+      [name_len<=2] {shield-file:url("markers/rsKS.svg");}
+      [name_len>=3] {shield-file:url("markers/rsKSW.svg");}
+    }
+    [class=517] {
+      shield-text-dy:2;shield-text-dx:-1;
+      [name_len<=2] {shield-file:url("markers/rsLA.svg");}
+      [name_len>=3] {shield-file:url("markers/rsLAW.svg");}
+    }
+    [class=519] {
+      shield-text-dy:2.5;shield-text-dx:0;
+      [name_len<=2] {shield-file:url("markers/rsMD.svg");}
+      [name_len>=3] {shield-file:url("markers/rsMDW.svg");}
+    }
+    [class=521] {
+      [name_len<=2] {shield-file:url("markers/rsMI.svg");}
+      [name_len>=3] {shield-file:url("markers/rsMIW.svg");}
+    }
+    [class=522] {
+      shield-text-dy:2;shield-fill:white;
+      [name_len<=2] {shield-file:url("markers/rsMN.svg");}
+      [name_len>=3] {shield-file:url("markers/rsMNW.svg");}
+    }
+    [class=524] {
+      [name_len<=2] {shield-file:url("markers/rsMO.svg");}
+      [name_len>=3] {shield-file:url("markers/rsMOW.svg");}
+    }
+    [class=526] {
+      shield-text-dy:-2;
+      [name_len<=2] {shield-file:url("markers/rsNE.svg");}
+      [name_len>=3] {shield-file:url("markers/rsNEW.svg");}
+    }
+    [class=527] {
+      shield-text-dy:-4;
+      [name_len<=2] {shield-file:url("markers/rsNV.svg");}
+      [name_len>=3] {shield-file:url("markers/rsNVW.svg");}
+    }
+    [class=528] {
+      shield-text-dx:1;
+      [name_len<=2] {shield-file:url("markers/rsNH.svg");}
+      [name_len>=3] {shield-file:url("markers/rsNHW.svg");}
+    }
+    [class=530] {
+      [name_len<=2] {shield-file:url("markers/rsNM.svg");}
+      [name_len>=3] {shield-file:url("markers/rsNMW.svg");}
+    }
+    [class=531] {
+      [name_len<=2] {shield-file:url("markers/rsNY.svg");}
+      [name_len>=3] {shield-file:url("markers/rsNYW.svg");}
+    }
+    [class=532] {
+      [name_len<=2] {shield-file:url("markers/rsNC.svg");}
+      [name_len>=3] {shield-file:url("markers/rsNCW.svg");}
+    }
+    [class=533] {
+      [name_len<=2] {shield-file:url("markers/rsND.svg");}
+      [name_len>=3] {shield-file:url("markers/rsNDW.svg");}
+    }
+    [class=534] {
+      [name_len<=2] {shield-file:url("markers/rsOH.svg");}
+      [name_len>=3] {shield-file:url("markers/rsOHW.svg");}
+    }
+    [class=535] {
+      shield-text-dy:2;shield-halo-fill:#ffffff;shield-halo-radius:1;
+      [name_len<=2] {shield-file:url("markers/rsOK.svg");}
+      [name_len>=3] {shield-file:url("markers/rsOKW.svg");}
+    }
+    [class=536] {
+      [name_len<=2] {shield-file:url("markers/rsOR.svg");}
+      [name_len>=3] {shield-file:url("markers/rsORW.svg");}
+    }
+    [class=537] {
+      shield-text-dy:1;
+      [name_len<=2] {shield-file:url("markers/rsPA.svg");}
+      [name_len>=3] {shield-file:url("markers/rsPAW.svg");}
+    }
+    [class=539] {shield-file:url("markers/rsSC.svg");shield-text-dy:3;shield-text-dx:0;shield-fill:#004baa;}
+    [class=540] {
+      [name_len<=2] {shield-file:url("markers/rsSD.svg");}
+      [name_len>=3] {shield-file:url("markers/rsSDW.svg");}
+    }
+    [class=541] {shield-file:url("markers/rsTN.svg");shield-text-dy:-1.5;}
+    [class=543] {
+      [name_len<=2] {shield-file:url("markers/rsUT.svg");}
+      [name_len>=3] {shield-file:url("markers/rsUTW.svg");}
+    }
+    [class=544] {
+      shield-text-dy:3;shield-fill:#006b54;
+      [name_len<=2] {shield-file:url("markers/rsVT.svg");}
+      [name_len>=3] {shield-file:url("markers/rsVTW.svg");}
+    }
+    [class=545] {
+      shield-text-dy:-1;
+      [name_len<=2] {shield-file:url("markers/rsVA.svg");}
+      [name_len>=3] {shield-file:url("markers/rsVAW.svg");}
+    }
+    [class=546] {shield-file:url("markers/rsWA.svg");shield-text-dy:-2;}
+    [class=548] {
+      [name_len<=2] {shield-file:url("markers/rsWI.svg");}
+      [name_len>=3] {shield-file:url("markers/rsWIW.svg");}
+    }
+    [class=549] {
+      [name_len<=2] {shield-file:url("markers/rsWY.svg");}
+      [name_len>=3] {shield-file:url("markers/rsWYW.svg");}
+    }
+    [class=550] {shield-file:url("markers/rsDC.svg");shield-text-dy:4;shield-halo-fill:#ffffff;shield-halo-radius:1;}
+    /* generic state shields */
+    [class=506],[class=507],[class=512],[class=513],[class=514],[class=516],[class=518],[class=520],[class=523],
+      [class=525],[class=529],[class=538],[class=542],[class=547] {
+      [name_len<=2] {shield-file:url("markers/rsRec.svg");}
+      [name_len>=3] {shield-file:url("markers/rsRecW.svg");}
+    }
+  
+    /* Canadian provincial shields */
+    [class=577] {shield-file:url("markers/rsABCN1.svg");shield-text-dy:-1;shield-fill:white;shield-halo-fill:black;shield-halo-radius:1;}
+    [class=560] {shield-file:url("markers/rsABW.svg");shield-text-dy:-1;}
+    [class=580] {shield-file:url("markers/rsABSW.svg");}
+    [class=576] {shield-file:url("markers/rsBCCN1.svg");shield-fill:white;shield-halo-fill:black;shield-halo-radius:1;}
+    [class=561] {shield-file:url("markers/rsBC.svg");shield-text-dy:2;shield-fill:#00008b}
+    [class=562] {shield-file:url("markers/rsMB.svg");shield-text-dy:2;}
+    [class=582] {shield-file:url("markers/rsMBSW.svg");shield-fill:white;}
+    [class=563] {shield-file:url("markers/rsNBW.svg");}
+    [class=583] {shield-file:url("markers/rsNBSW.svg");}
+    [class=564] {shield-file:url("markers/rsNL.svg");}
+    [class=584] {shield-file:url("markers/rsNLS.svg");}
+    [class=566] {shield-file:url("markers/rsNSW.svg");shield-text-dy:3.5;shield-fill:#ffffff}
+    [class=586] {shield-file:url("markers/rsNSS.svg");shield-text-dy:1;}
+    [class=565] {shield-file:url("markers/rsNT1.svg");shield-text-dy:7;shield-fill:#ffffff}
+    [class=568] {shield-file:url("markers/rsON.svg");shield-text-dy:2;}
+    [class=588] {shield-file:url("markers/rsONS.svg");}
+    [class=569] {shield-file:url("markers/rsPE.svg");shield-text-dy:3;}
+    [class=570] {shield-file:url("markers/rsQCW.svg");shield-text-dy:3;shield-fill:#ffffff}
+    [class=575] {shield-file:url("markers/rsQEW.svg");shield-name:"''";}
+    [class=571] {shield-file:url("markers/rsSKW.svg");shield-text-dy:2.5;shield-fill:#ffffff}
+    [class=572] {shield-file:url("markers/rsSKRW.svg");shield-text-dy:3;}
+    [class=591] {shield-file:url("markers/rsSKS.svg");shield-text-dy:4;}
+    [class=578] {shield-file:url("markers/rsYH_ca.svg");shield-halo-fill:white;shield-halo-radius:1;}
+    [class=573] {shield-file:url("markers/rsYT.svg");}
+  }
+}
+
+#vector_point_labels::booth_and_gate {
   ::tollbooth[class=1041] {[zoom>=16][zoom<=18] {marker-file:url("markers/toll.svg");}}
   ::gate[class=1042] {[zoom>=17][zoom<=18] {marker-file:url("markers/gate.svg");}}
-  ::neighborhood[class=1025][zoom>=13][zoom<=18] {
-    text-name:"[name]";
-    text-face-name:"Open Sans Regular";
-    text-size:11;
-    [zoom>=15][zoom<=18] {text-size:13}
-    text-fill:#826255;
-    text-min-distance:15;
-    text-halo-radius:1;
-    text-transform:uppercase;
-    [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
-    [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
-    [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12}
-    [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
-    [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
-  }
-  ::national_forest[class=1055][zoom>=7][zoom<=18] {
-    text-name:"[name]";
-    text-face-name:"Open Sans Italic";
-    [zoom=7][display_class>=0][display_class<=1] {text-name:"[name]";text-size:11;}
-    [zoom=8][display_class>=0][display_class<=2] {text-name:"[name]";text-size:11;}
-    [zoom=9][display_class>=0][display_class<=3] {text-name:"[name]";text-size:11;}
-    [zoom>=10][zoom<=11][display_class>=0][display_class<=4] {text-name:"[name]";text-size:12;}
-    [zoom>=12][zoom<=13][display_class>=0][display_class<=4] {text-name:"[name]";text-size:13;}
-    [zoom>=14][zoom<=15][display_class>=0][display_class<=4] {text-name:"[name]";text-size:15;}
-    [zoom>=16][zoom<=18][display_class>=0][display_class<=4] {text-name:"[name]";text-size:16;}
-    text-fill:#006837;
-    text-halo-radius:1;
-    text-transform:uppercase;
-    [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
-    [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
-    [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12}
-    [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
-    [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
-  }
-  ::national_park[class=1061][zoom>=7][zoom<=18] {
-    text-name:"''";
-    text-face-name:"Open Sans Italic";
-    [zoom=7][display_class>=0][display_class<=1] {text-name:"[name]";text-size:11;}
-    [zoom=8][display_class>=0][display_class<=2] {text-name:"[name]";text-size:11;}
-    [zoom=9][display_class>=0][display_class<=3] {text-name:"[name]";text-size:11;}
-    [zoom>=10][zoom<=11][display_class>=0][display_class<=4] {text-name:"[name]";text-size:12;}
-    [zoom>=12][zoom<=13][display_class>=0][display_class<=4] {text-name:"[name]";text-size:13;}
-    [zoom>=14][zoom<=15][display_class>=0][display_class<=4] {text-name:"[name]";text-size:15;}
-    [zoom>=16][zoom<=18][display_class>=0][display_class<=4] {text-name:"[name]";text-size:16;}
-    text-fill:#006837;
-    text-halo-radius:1;
-    text-transform:uppercase;
-    [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
-    [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
-    [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12}
-    [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
-    [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
-  }
-  ::water[class=1050],[class=1051],[class=1052],[class=1054] {
-    text-name:"''";
-    [class=1050][zoom>=4][zoom<=18] {text-name:"[name]";}
-    [class=1051],[class=1052] {
-      [zoom>=8][zoom<=18] {text-name:"[name]";}
-    }
-    [class=1054][zoom>=16][zoom<=18] {text-name:"[name]";}
-    text-face-name:"Open Sans Italic";
-    text-size:11;
-    [zoom>=4][zoom<=9] {text-size:11;}
-    [zoom=10] {text-size:11;}
-    [zoom>=11][zoom<=12] {text-size:12;}
-    [zoom>=13][zoom<=14] {text-size:13;}
-    [zoom=15] {text-size:14;}
-    [zoom>=15][zoom<=18] {text-size:15;}
-    text-fill:#2b5377;
-    text-halo-radius:1;
-    [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
-    [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
-    [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12}
-    [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
-    [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
-  }
-  ::POI1[class=1057],[class=1056],[class=1062],[class=1085],[class=1075],[class=1097] {
-    text-name:"''";
-    text-face-name:"Open Sans Italic";
-    text-halo-radius:1;
-    [zoom=8][display_class>=0][display_class<=2] {text-name:"[name]";text-size:11;}
-    [zoom=9][display_class>=0][display_class<=3] {text-name:"[name]";text-size:11;}
-    [zoom>=10][zoom<=11][display_class>=0][display_class<=4] {text-name:"[name]";text-size:11;}
-    [zoom>=12][zoom<=13] {text-name:"[name]";text-size:12;}
-    [zoom>=14][zoom<=15] {text-name:"[name]";text-size:12;}
-    [zoom>=16][zoom<=18] {text-name:"[name]";text-size:13;}
-    /* beaches */
-    [class=1057][zoom>=9][zoom<=18] {
-      text-fill:#b3a098;
-    }
-    /* forests and parks */
-    [class=1056],[class=1062] {
-      [zoom>=7][zoom<=18] {
-        text-fill:#006837;
-        text-min-distance:30;
-        [class=1056] {text-transform:uppercase;}
-      }
-    }
-    /* native reservations, military and national monuments */
-    [class=1085],[class=1075],[class=1097] {
-      [zoom>=7][zoom<=18] {
-      [class=1085] {text-fill:#82592a}
-      [class=1075] {text-fill:#4d4d4d}
-      [class=1097] {text-fill:#006837}
-      }
-    }
-    [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
-    [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
-    [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12}
-    [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
-    [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
-  }
-  ::airport[class=1070][zoom>=9][zoom<=18] {
-    ::icon {
-      [zoom>=9][zoom<=11][display_class>=0] {marker-file:url("markers/airport.svg");}
-      [zoom>=12][zoom<=18] {marker-file:url("markers/airport.svg");}
-    }
-    ::text[zoom>=11][zoom<=18] {
-      text-name:"''";
-      text-face-name:"Open Sans Regular";
-      text-fill:#666666;
-      text-size:11;
-      text-dy:-15;
-      text-halo-radius:1;
-      text-transform:uppercase;
-      [zoom>=11][zoom<=12][display_class>=0] {text-name:"[name]";}
-      [zoom>=13][zoom<=18] {text-name:"[name]";}
-      [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12}
-      [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
-      [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
-    }
-  }
-  ::golf_course[class=1073][zoom>=13][zoom<=18] {
-    ::icon {marker-file:url("markers/golf.svg");}
-    ::text[zoom>=15][zoom<=18] {
-      text-name:"[name]";
-      text-face-name:"Open Sans Regular";
-      text-fill:#006837;
-      text-size:11;
-      text-dy:-15;
-      text-halo-radius:1;
-      [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
-      [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
-    }
-  }
-  ::hospital[class=1074][zoom>=14][zoom<=18] {
-    ::icon {marker-file:url("markers/hospital.svg");}
-    ::text[zoom>=16][zoom<=18] {
-      text-name:"[name]";
-      text-face-name:"Open Sans Regular";
-      text-fill:#666666;
-      text-size:11;
-      text-dy:-15;
-      text-halo-radius:1;
-      [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
-      [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
-    }
-  }
-  ::enclosed_traffic_area[class=1105][zoom>=14][zoom<=18] {
-    ::icon {marker-file:url("markers/parking.svg");}
-    ::text[zoom>=16][zoom<=18] {
-      text-name:"[name]";
-      text-face-name:"Open Sans Regular";
-      text-fill:#666666;
-      text-size:11;
-      text-dy:-15;
-      text-halo-radius:1;
-      [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
-      [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
-    }
-  }
-  ::POI2[class=1071],[class=1079],[class=1080],[class=1081] {
-    shield-name:"''";
-    shield-face-name:"Open Sans Regular";
-    shield-fill:#666666;
-    shield-halo-radius:1;
-    shield-text-dy:-14;
-    shield-file:url("markers/poi.svg");
-    [zoom>=12][zoom<=14] {shield-size:11;}
-    [zoom=15] {shield-size:11;}
-    [zoom>=16][zoom<=17] {shield-size:12;}
-    [zoom=18] {shield-size:13;}
-    /* amusement park */
-    [class=1071][zoom>=12][zoom<=18] {
-      shield-name:"[name]";
-      shield-file:url("markers/poi.svg");}
-    /* shopping center */
-    [class=1079][zoom>=13][zoom<=18] {
-      shield-name:"[name]";
-      shield-fill:#b3a098;
-      shield-file:url("markers/poi.svg");}
-    /* stadium and university*/
-    [class=1080],[class=1081] {
-      [zoom>=13][zoom<=18] {
-        shield-name:"[name]";
-        shield-fill:#b3a098;
-        shield-file:url("markers/poi.svg");
-        [zoom>=16][zoom<=18] {shield-fill:#5f7d7b}
-      }
-    }
-    [zoom>=2][zoom<=6] {shield-halo-fill:@background_2-6}
-    [zoom>=7][zoom<=8] {shield-halo-fill:@background_7-8}
-    [zoom>=9][zoom<=12] {shield-halo-fill:@background_9-12}
-    [zoom>=13][zoom<=15] {shield-halo-fill:@background_13-15}
-    [zoom>=16][zoom<=18] {shield-halo-fill:@background_16-18}
-  }
-
-  ::POI4[class=1092],[class=1090],[class=1103],[class=1082],[class=1095],[class=1091],[class=1093],[class=1096],
-    [class=1097],[class=1098],[class=1099],[class=1102],[class=1104],[class=1100],[class=1101] {
-    [zoom>=16][zoom<=18] {
-      shield-name:"[name]";
-      shield-face-name:"Open Sans Regular";
-      shield-fill:#666666;
-      shield-size:11;
-      shield-text-dy:-12;
-      /* ferry terminal, harbor, marina */
-      [class=1092],[class=1082],[class=1095] {shield-file:url("markers/marina.svg");shield-text-dy:-16;}
-      /* bus station */
-      [class=1090] {shield-file:url("markers/bus_station.svg");shield-text-transform:uppercase;}
-      /* train station */
-      [class=1103] {shield-file:url("markers/train.svg");shield-text-transform:uppercase;shield-text-dy:-16;}
-      /* convention center, ice skating rink, mine, monument, museum, tourist attraction, vineyard */
-      [class=1091],[class=1093],[class=1096],[class=1097],[class=1098],[class=1102],[class=1104] {
-        shield-file:url("markers/poi.svg")}
-      /* rest area */
-      [class=1099] {shield-file:url("markers/rest.svg")}
-      /* ski resort */
-      [class=1100] {shield-file:url("markers/ski_resort.svg")}
-      /* summit */
-      [class=1101] {shield-file:url("markers/peak.svg")}
-    }
-  }
-  ::cemetery[class=1072] {
-    text-name:"[name]";
-    text-face-name:"Open Sans Italic";
-    text-fill:#629243;
-    text-size:11;
-    [zoom=15] {text-size:13}
-    [zoom=16] {text-size:14}
-  }
-  ::building[class=1065] {
-    text-name:"[name]";
-    text-face-name:"Open Sans Italic";
-    text-fill:#666666;
-    text-size:11;
-    [zoom=16] {text-size:11}
-    [zoom=17] {text-size:11}
-    [zoom=18] {text-size:12}
-  }
 }
