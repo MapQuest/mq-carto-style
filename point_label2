@@ -7,27 +7,7 @@
     text-fill:#826255;
     text-min-distance:15;
     text-halo-radius:1;
-    text-wrap-width:20;
-    text-transform:uppercase;
-    [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
-    [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
-    [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12}
-    [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
-    [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
-  }
-  ::national_forest[class=1055][zoom>=7][zoom<=18] {
-    text-name:"[name]";
-    text-face-name:"Open Sans Italic";
-    [zoom=7][display_class>=0][display_class<=1] {text-name:"[name]";text-size:11;}
-    [zoom=8][display_class>=0][display_class<=2] {text-name:"[name]";text-size:11;}
-    [zoom=9][display_class>=0][display_class<=3] {text-name:"[name]";text-size:11;}
-    [zoom>=10][zoom<=11][display_class>=0][display_class<=4] {text-name:"[name]";text-size:12;}
-    [zoom>=12][zoom<=13][display_class>=0][display_class<=4] {text-name:"[name]";text-size:13;}
-    [zoom>=14][zoom<=15][display_class>=0][display_class<=4] {text-name:"[name]";text-size:15;}
-    [zoom>=16][zoom<=18][display_class>=0][display_class<=4] {text-name:"[name]";text-size:16;}
-    text-fill:#006837;
-    text-halo-radius:1;
-    text-wrap-width:20;
+    text-wrap-width:50;
     text-transform:uppercase;
     [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
     [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
@@ -47,7 +27,27 @@
     [zoom>=16][zoom<=18][display_class>=0][display_class<=4] {text-name:"[name]";text-size:16;}
     text-fill:#006837;
     text-halo-radius:1;
-    text-wrap-width:20;
+    text-wrap-width:50;
+    text-transform:uppercase;
+    [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
+    [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
+    [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12}
+    [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
+    [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
+  }
+  ::national_forest[class=1055][zoom>=7][zoom<=18] {
+    text-name:"[name]";
+    text-face-name:"Open Sans Italic";
+    [zoom=7][display_class>=0][display_class<=1] {text-name:"[name]";text-size:11;}
+    [zoom=8][display_class>=0][display_class<=2] {text-name:"[name]";text-size:11;}
+    [zoom=9][display_class>=0][display_class<=3] {text-name:"[name]";text-size:11;}
+    [zoom>=10][zoom<=11][display_class>=0][display_class<=4] {text-name:"[name]";text-size:12;}
+    [zoom>=12][zoom<=13][display_class>=0][display_class<=4] {text-name:"[name]";text-size:13;}
+    [zoom>=14][zoom<=15][display_class>=0][display_class<=4] {text-name:"[name]";text-size:15;}
+    [zoom>=16][zoom<=18][display_class>=0][display_class<=4] {text-name:"[name]";text-size:16;}
+    text-fill:#006837;
+    text-halo-radius:1;
+    text-wrap-width:50;
     text-transform:uppercase;
     [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
     [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
@@ -57,19 +57,18 @@
   }
   ::water[class=1050],[class=1051],[class=1052],[class=1054] {
     text-name:"''";
-    [class=1050][zoom>=4][zoom<=18] {text-name:"[name]";}
-    [class=1051],[class=1052] {
-      [zoom>=8][zoom<=18] {text-name:"[name]";}
-    }
-    [class=1054][zoom>=16][zoom<=18] {text-name:"[name]";}
     text-face-name:"Open Sans Italic";
-    text-size:11;
-    [zoom>=4][zoom<=9] {text-size:11;}
-    [zoom=10] {text-size:11;}
-    [zoom>=11][zoom<=12] {text-size:12;}
-    [zoom>=13][zoom<=14] {text-size:13;}
-    [zoom=15] {text-size:14;}
-    [zoom>=15][zoom<=18] {text-size:15;}
+    [zoom=9][display_class=0] {text-name:"[name]";text-size:11;}
+    [zoom>=10][zoom<=11] {
+      [display_class>=0][display_class<=2] {text-name:"[name]";text-size:12;}
+      [display_class>=3][display_class<=4] {text-name:"[name]";text-size:11;}
+    }
+    [zoom>=12][zoom<=13][display_class>=0][display_class<=4] {text-name:"[name]";text-size:13;}
+    [zoom>=14][zoom<=15] {text-name:"[name]";text-size:14;}
+    [zoom>=16][zoom<=18] {text-name:"[name]";text-size:15;}
+    [zoom>14] {
+      [class=1050],[class=1051] {text-transform:uppercase;}
+    }
     text-fill:#2b5377;
     text-halo-radius:1;
     text-wrap-width:20;
@@ -83,37 +82,25 @@
     text-name:"''";
     text-face-name:"Open Sans Italic";
     text-halo-radius:1;
-    text-wrap-width:20;
-    [zoom=8][display_class>=0][display_class<=2] {text-name:"[name]";text-size:11;}
+    text-wrap-width:50;
+    [zoom>=4][zoom<=10] {text-wrap-width:20;}
+    [zoom>=7][zoom<=8][display_class=0] {text-name:"[name]";text-size:11;}
     [zoom=9][display_class>=0][display_class<=3] {text-name:"[name]";text-size:11;}
-    [zoom>=10][zoom<=11][display_class>=0][display_class<=4] {text-name:"[name]";text-size:11;}
-    [zoom>=12][zoom<=13] {text-name:"[name]";text-size:12;}
-    [zoom>=14][zoom<=15] {text-name:"[name]";text-size:12;}
+    [zoom>=10][zoom<=12][display_class>=0][display_class<=4] {text-name:"[name]";text-size:11;}
+    [zoom>=13][zoom<=15] {text-name:"[name]";text-size:12;}
     [zoom>=16][zoom<=18] {text-name:"[name]";text-size:13;}
     /* beaches */
-    [class=1057][zoom>=9][zoom<=18] {
-      text-fill:#b3a098;
-    }
+    [class=1057] {text-fill:#b3a098;}
     /* forests and parks */
     [class=1056],[class=1062] {
-      [zoom>=7][zoom<=18] {
-        text-name:"[name]";
-        text-face-name:"Open Sans Italic";
-        text-fill:#006837;
-        text-min-distance:30;
-        [class=1056] {text-transform:uppercase;}
-      }
+      text-fill:#006837;
+      text-min-distance:10;
+      [class=1056] {text-transform:uppercase;}
     }
     /* native reservations, military and national monuments */
-    [class=1085],[class=1075],[class=1097] {
-      [zoom>=7][zoom<=18] {
-      text-name:"[name]";
-      text-face-name:"Open Sans Italic";
-      [class=1085] {text-fill:#82592a}
-      [class=1075] {text-fill:#4d4d4d}
-      [class=1097] {text-fill:#006837}
-      }
-    }
+    [class=1085] {text-fill:#82592a}
+    [class=1075] {text-fill:#4d4d4d}
+    [class=1097] {text-fill:#006837}
     [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
     [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
     [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12}
@@ -122,8 +109,12 @@
   }
   ::airport[class=1070][zoom>=9][zoom<=18] {
     ::icon {
-      [zoom>=9][zoom<=11][display_class>=0] {marker-file:url("markers/airport.svg");}
-      [zoom>=12][zoom<=18] {marker-file:url("markers/airport.svg");}
+      [display_class=0] {
+        [zoom>=9][zoom<=18] {marker-file:url("markers/airport.svg");}
+      }
+      [display_class>=1] {
+        [zoom>=11][zoom<=18] {marker-file:url("markers/airfield.svg");}
+      }
     }
     ::text[zoom>=11][zoom<=18] {
       text-name:"''";
@@ -132,11 +123,14 @@
       text-size:11;
       text-dy:-15;
       text-halo-radius:1;
-      text-wrap-width:20;
-      text-transform:uppercase;
-      [zoom>=11][zoom<=12][display_class>=0] {text-name:"[name]";}
-      [zoom>=13][zoom<=18] {text-name:"[name]";}
-      [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12}
+      text-wrap-width:50;
+      [display_class=0] {
+        [zoom>=11][zoom<=18] {text-name:"[name]";text-transform:uppercase;}
+      }
+      [display_class>=1] {
+        [zoom>=14][zoom<=18] {text-name:"[name]";}
+      }
+      [zoom>=11][zoom<=12] {text-halo-fill:@background_9-12}
       [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
       [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
     }
@@ -150,7 +144,7 @@
       text-size:11;
       text-dy:-15;
       text-halo-radius:1;
-      text-wrap-width:20;
+      text-wrap-width:50;
       [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
       [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
     }
@@ -164,7 +158,7 @@
       text-size:11;
       text-dy:-15;
       text-halo-radius:1;
-      text-wrap-width:20;
+      text-wrap-width:50;
       [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
       [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
     }
@@ -178,7 +172,7 @@
       text-size:11;
       text-dy:-15;
       text-halo-radius:1;
-      text-wrap-width:20;
+      text-wrap-width:50;
       [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
       [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
     }
@@ -194,6 +188,7 @@
     text-placements: "N,S,NE,NW,SE,SW,E,W";
     text-dy:8;
     text-dx:5;
+    text-line-spacing:1;
     [zoom>=12][zoom<=14] {text-size:11;}
     [zoom=15] {text-size:11;}
     [zoom>=16][zoom<=17] {text-size:12;text-line-spacing:-2;}
@@ -208,13 +203,11 @@
     /* shopping center */
     [class=1079][zoom>=13][zoom<=18] {
       text-name:"[name]";
-      text-fill:#b3a098;
       marker-file:url("markers/poi.svg");}
     /* stadium and university*/
     [class=1080],[class=1081] {
       [zoom>=13][zoom<=18] {
         text-name:"[name]";
-        text-fill:#b3a098;
         [zoom>=16][zoom<=18] {text-fill:#5f7d7b}
         marker-file:url("markers/poi.svg");
       }
@@ -228,7 +221,6 @@
       text-face-name:"Open Sans Regular";
       text-fill:#666666;
       text-halo-radius:1;
-      text-wrap-width:50;
       text-halo-fill:@background_16-18;
       text-wrap-width:120;
       text-placement-type: simple;
@@ -237,7 +229,6 @@
       text-dx:5;
       text-size:11;
       text-line-spacing:-2;
-      text-avoid-edges:true;
       /* ferry terminal, harbor, marina */
       [class=1092],[class=1082],[class=1095] {marker-file:url("markers/marina.svg");text-dy:-16;}
       /* bus station */

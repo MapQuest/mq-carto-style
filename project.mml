@@ -612,6 +612,34 @@
     {
       "geometry": "linestring",
       "extent": [
+        -128.34378500000014,
+        38.17137499999996,
+        -75.36030899999997,
+        53.532190999999976
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * FROM vector_linear_geometry_12 WHERE rclass != 15) AS data",
+        "key_field": "",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-14287164.7926814,4603663.72034301,-8389071.22390375,7082052.02418581",
+        "host": "localhost",
+        "port": "5432",
+        "user": "markvahrenwald",
+        "password": "Lambkin94",
+        "dbname": "multinet"
+      },
+      "id": "vector_linear_geometry_overlay",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "vector_linear_geometry_overlay"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
         -127.46777200000005,
         23.294272999999965,
         -66.59790899999999,

@@ -500,9 +500,6 @@
       line-pattern-smooth:1;
     }
   }
-
-
-
   ::freeway_ramp[rclass=0][ramp=true] {                      /* includes free and toll ramps */
     [zoom>=16][zoom<=18] {line-cap:round;line-join:round;}
     ::casing {
@@ -572,7 +569,7 @@
 
 #vector_linear_geometry_8 {
   ::major_road2-3[rclass>=2][rclass<=3][ramp!=true] {
-    [zoom=8] {line-width:0.5;}
+    [zoom=8] {line-width:0.75;}
     [zoom=9] {line-width:1;}
   }
   ::major_road1[rclass=1][ramp!=true] {
