@@ -6,7 +6,7 @@
     [zoom>=15][zoom<=18] {text-size:13}
     text-fill:#826255;
     text-min-distance:15;
-    text-halo-radius:1;
+    text-halo-radius:2;
     text-wrap-width:50;
     text-transform:uppercase;
     [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
@@ -18,15 +18,15 @@
   ::national_park[class=1061][zoom>=7][zoom<=18] {
     text-name:"''";
     text-face-name:"Open Sans Italic";
-    [zoom=7][display_class>=0][display_class<=1] {text-name:"[name]";text-size:11;}
-    [zoom=8][display_class>=0][display_class<=2] {text-name:"[name]";text-size:11;}
-    [zoom=9][display_class>=0][display_class<=3] {text-name:"[name]";text-size:11;}
-    [zoom>=10][zoom<=11][display_class>=0][display_class<=4] {text-name:"[name]";text-size:12;}
+    [zoom=7][display_class=0] {text-name:"[name]";text-size:11;}
+    [zoom=8][display_class>=0][display_class<=1] {text-name:"[name]";text-size:11;}
+    [zoom=9][display_class>=0][display_class<=2] {text-name:"[name]";text-size:11;}
+    [zoom>=10][zoom<=11][display_class>=0][display_class<=3] {text-name:"[name]";text-size:12;}
     [zoom>=12][zoom<=13][display_class>=0][display_class<=4] {text-name:"[name]";text-size:13;}
     [zoom>=14][zoom<=15][display_class>=0][display_class<=4] {text-name:"[name]";text-size:15;}
     [zoom>=16][zoom<=18][display_class>=0][display_class<=4] {text-name:"[name]";text-size:16;}
     text-fill:#006837;
-    text-halo-radius:1;
+    text-halo-radius:2;
     text-wrap-width:50;
     text-transform:uppercase;
     [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
@@ -46,7 +46,7 @@
     [zoom>=14][zoom<=15][display_class>=0][display_class<=4] {text-name:"[name]";text-size:15;}
     [zoom>=16][zoom<=18][display_class>=0][display_class<=4] {text-name:"[name]";text-size:16;}
     text-fill:#006837;
-    text-halo-radius:1;
+    text-halo-radius:2;
     text-wrap-width:50;
     text-transform:uppercase;
     [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
@@ -63,14 +63,26 @@
       [display_class>=0][display_class<=2] {text-name:"[name]";text-size:12;}
       [display_class>=3][display_class<=4] {text-name:"[name]";text-size:11;}
     }
-    [zoom>=12][zoom<=13][display_class>=0][display_class<=4] {text-name:"[name]";text-size:13;}
-    [zoom>=14][zoom<=15] {text-name:"[name]";text-size:14;}
-    [zoom>=16][zoom<=18] {text-name:"[name]";text-size:15;}
+    [zoom=12] {
+      [display_class>=0][display_class<=2] {text-name:"[name]";text-size:13;}
+      [display_class>=3][display_class<=5] {text-name:"[name]";text-size:11;}
+    }
+    [zoom>=13][zoom<=14] {
+      [display_class>=0][display_class<=2] {text-name:"[name]";text-size:14;}
+      [display_class>=3][display_class<=5] {text-name:"[name]";text-size:13;}
+      [display_class=6] {text-name:"[name]";text-size:11;text-line-spacing:-4;}
+    }
+    [zoom>=15][zoom<=16] {
+      [display_class>=0][display_class<=2] {text-name:"[name]";text-size:15;}
+      [display_class>=3][display_class<=5] {text-name:"[name]";text-size:14;}
+      [display_class=6] {text-name:"[name]";text-size:11;text-line-spacing:-4;}
+    }
+    [zoom>=17][zoom<=18] {text-name:"[name]";text-size:15;}
     [zoom>14] {
       [class=1050],[class=1051] {text-transform:uppercase;}
     }
     text-fill:#2b5377;
-    text-halo-radius:1;
+    text-halo-radius:2;
     text-wrap-width:20;
     [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
     [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
@@ -81,14 +93,30 @@
   ::POI1[class=1057],[class=1056],[class=1062],[class=1085],[class=1075],[class=1097] {
     text-name:"''";
     text-face-name:"Open Sans Italic";
-    text-halo-radius:1;
+    text-halo-radius:2;
     text-wrap-width:50;
-    [zoom>=4][zoom<=10] {text-wrap-width:20;}
+    [zoom>=7][zoom<=9] {text-wrap-width:20;}
     [zoom>=7][zoom<=8][display_class=0] {text-name:"[name]";text-size:11;}
     [zoom=9][display_class>=0][display_class<=3] {text-name:"[name]";text-size:11;}
-    [zoom>=10][zoom<=12][display_class>=0][display_class<=4] {text-name:"[name]";text-size:11;}
-    [zoom>=13][zoom<=15] {text-name:"[name]";text-size:12;}
-    [zoom>=16][zoom<=18] {text-name:"[name]";text-size:13;}
+    [zoom>=10][zoom<=11] {
+      [display_class=0] {text-name:"[name] + ', ' + [display_class]";text-size:14;text-character-spacing:2;}
+      [display_class>=1][display_class<=4] {text-name:"[name] + ', ' + [display_class]";text-size:12;}
+      [display_class>=5][display_class<=6] {text-name:"[name] + ', ' + [display_class]";text-size:11;}
+    }
+    [zoom>=12][zoom<=13] {
+      [display_class>=0][display_class<=6] {text-name:"[name] + ', ' + [display_class]";text-size:13;}
+      [display_class>=7][display_class<=8] {text-name:"[name] + ', ' + [display_class]";text-size:11;}
+    }
+    [zoom>=14][zoom<=15] {
+      [display_class>=0][display_class<=4] {text-name:"[name]";text-size:14;}
+      [display_class>=5][display_class<=9] {text-name:"[name]";text-size:12;}
+      [display_class>=10][display_class<=12] {text-name:"[name]";text-size:11;}
+    }
+    [zoom>=16][zoom<=18] {
+      [display_class>=0][display_class<=4] {text-name:"[name]";text-size:15;}
+      [display_class>=5][display_class<=9] {text-name:"[name]";text-size:14;}
+      [display_class>=10] {text-name:"[name]";text-size:11;}
+    }
     /* beaches */
     [class=1057] {text-fill:#b3a098;}
     /* forests and parks */
@@ -122,7 +150,7 @@
       text-fill:#666666;
       text-size:11;
       text-dy:-15;
-      text-halo-radius:1;
+      text-halo-radius:2;
       text-wrap-width:50;
       [display_class=0] {
         [zoom>=11][zoom<=18] {text-name:"[name]";text-transform:uppercase;}
@@ -143,7 +171,7 @@
       text-fill:#006837;
       text-size:11;
       text-dy:-15;
-      text-halo-radius:1;
+      text-halo-radius:2;
       text-wrap-width:50;
       [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
       [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
@@ -157,7 +185,7 @@
       text-fill:#666666;
       text-size:11;
       text-dy:-15;
-      text-halo-radius:1;
+      text-halo-radius:2;
       text-wrap-width:50;
       [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
       [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
@@ -171,7 +199,7 @@
       text-fill:#666666;
       text-size:11;
       text-dy:-15;
-      text-halo-radius:1;
+      text-halo-radius:2;
       text-wrap-width:50;
       [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
       [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
@@ -182,7 +210,7 @@
     text-name:"''";
     text-face-name: "Open Sans Regular";
     text-fill:#666666;
-    text-halo-radius:1;
+    text-halo-radius:2;
     text-wrap-width:50;
     text-placement-type: simple;
     text-placements: "N,S,NE,NW,SE,SW,E,W";
@@ -220,7 +248,7 @@
       text-name:"[name]";
       text-face-name:"Open Sans Regular";
       text-fill:#666666;
-      text-halo-radius:1;
+      text-halo-radius:2;
       text-halo-fill:@background_16-18;
       text-wrap-width:120;
       text-placement-type: simple;
@@ -251,7 +279,7 @@
     text-name:"[name]";
     text-face-name:"Open Sans Italic";
     text-fill:#629243;
-    text-halo-radius:1;
+    text-halo-radius:2;
     text-halo-fill:@background_13-15;
     text-halo-fill:@background_16-18;
     text-wrap-width:20;
@@ -263,7 +291,7 @@
     text-name:"[name]";
     text-face-name:"Open Sans Italic";
     text-fill:#666666;
-    text-halo-radius:1;
+    text-halo-radius:2;
     text-halo-fill:@background_16-18;
     text-wrap-width:20;
     [zoom=16] {text-size:11}

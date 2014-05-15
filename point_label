@@ -451,14 +451,14 @@
     shield-file:url("markers/poi.svg");
     [class>=3][class<=591] {
       [zoom>=7][zoom<=10] {shield-min-distance:200;}
-      [zoom=11] {shield-min-distance:350;}
-      [zoom=12] {shield-min-distance:350;}
-      [zoom=13] {shield-min-distance:350;}
-      [zoom=14] {shield-min-distance:400;}
-      [zoom=15] {shield-min-distance:450;}
-      [zoom=16] {shield-min-distance:450;}
-      [zoom=17] {shield-min-distance:450;}
-      [zoom=18] {shield-min-distance:450;}
+      [zoom=11] {shield-min-distance:300;}
+      [zoom=12] {shield-min-distance:300;}
+      [zoom=13] {shield-min-distance:300;}
+      [zoom=14] {shield-min-distance:300;}
+      [zoom=15] {shield-min-distance:350;}
+      [zoom=16] {shield-min-distance:350;}
+      [zoom=17] {shield-min-distance:400;}
+      [zoom=18] {shield-min-distance:400;}
     }
     /* US shields */
     [class=3] {

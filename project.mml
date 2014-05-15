@@ -429,7 +429,10 @@
         "port": "5432",
         "user": "markvahrenwald",
         "password": "Lambkin94",
-        "dbname": "naturalearth"
+        "dbname": "naturalearth",
+        "id": "natearth_roads",
+        "project": "mq_raster_specs",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
       },
       "id": "natearth_roads",
       "class": "",
