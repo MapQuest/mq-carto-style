@@ -700,7 +700,6 @@
       shield-min-distance:25;
       shield-file:url("markers/city3.svg");
       shield-halo-radius:1;
-      [zoom=13] {shield-text-transform:uppercase;}
       [zoom=6][display_class=3] {
         shield-name:"[name]";
         shield-halo-fill:@background_2-6;

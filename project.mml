@@ -22,7 +22,8 @@
     "point_label",
     "linear_label",
     "point_label2",
-    "linear_label2"
+    "linear_label2",
+    "point_label3"
   ],
   "Layer": [
     {
@@ -695,6 +696,62 @@
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "advanced": {},
       "name": "vector_point_labels2"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -127.46777200000005,
+        23.294272999999965,
+        -66.59790899999999,
+        53.77443900000002
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "vector_linear_labels",
+        "key_field": "",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-14189647.4715931,2667644.98466023,-7413645.31777677,7127552.95023263",
+        "host": "localhost",
+        "port": "5432",
+        "user": "markvahrenwald",
+        "password": "Lambkin94",
+        "dbname": "multinet"
+      },
+      "id": "vector_linear_labels2",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "vector_linear_labels2"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -126.38600042468238,
+        24.60710786105276,
+        -67.06054782148605,
+        51.15169379277966
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT placement_id, label_id, min_zoom, max_zoom, the_geom, class, unnest(text_elements) AS name, display_class, feature_area, floor(random()*4) AS dir from (SELECT pl.*,(unnest(pr.labels)).*\nFROM vector_point_label_placements pl INNER JOIN vector_point_label_properties pr ON pl.label_id = pr.label_id) x ORDER BY display_class ASC) AS data",
+        "key_field": "",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-14069225.2106741,2827563.29156572,-7465146.0358058,6648170.59016609",
+        "host": "localhost",
+        "port": "5432",
+        "user": "markvahrenwald",
+        "password": "Lambkin94",
+        "dbname": "multinet"
+      },
+      "id": "vector_point_labels3",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "vector_point_labels3"
     }
   ],
   "scale": 1,
