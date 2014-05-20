@@ -26,6 +26,7 @@
     [zoom>=14][zoom<=15][display_class>=0][display_class<=4] {text-name:"[name]";text-size:15;}
     [zoom>=16][zoom<=18][display_class>=0][display_class<=4] {text-name:"[name]";text-size:16;}
     text-fill:#006837;
+    text-min-distance:10;
     text-halo-radius:2;
     text-wrap-width:50;
     text-transform:uppercase;
@@ -46,6 +47,7 @@
     [zoom>=14][zoom<=15][display_class>=0][display_class<=4] {text-name:"[name]";text-size:15;}
     [zoom>=16][zoom<=18][display_class>=0][display_class<=4] {text-name:"[name]";text-size:16;}
     text-fill:#006837;
+    text-min-distance:10;
     text-halo-radius:2;
     text-wrap-width:50;
     text-transform:uppercase;
@@ -82,6 +84,7 @@
       [class=1050],[class=1051] {text-transform:uppercase;}
     }
     text-fill:#2b5377;
+    text-min-distance:10;
     text-halo-radius:2;
     text-wrap-width:20;
     [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
@@ -95,17 +98,18 @@
     text-face-name:"Open Sans Italic";
     text-halo-radius:2;
     text-wrap-width:50;
+    text-min-distance:10;
     [zoom>=7][zoom<=9] {text-wrap-width:20;}
     [zoom>=7][zoom<=8][display_class=0] {text-name:"[name]";text-size:11;}
     [zoom=9][display_class>=0][display_class<=3] {text-name:"[name]";text-size:11;}
     [zoom>=10][zoom<=11] {
-      [display_class=0] {text-name:"[name] + ', ' + [display_class]";text-size:14;text-character-spacing:2;}
-      [display_class>=1][display_class<=4] {text-name:"[name] + ', ' + [display_class]";text-size:12;}
-      [display_class>=5][display_class<=6] {text-name:"[name] + ', ' + [display_class]";text-size:11;}
+      [display_class=0] {text-name:"[name]";text-size:14;text-character-spacing:2;}
+      [display_class>=1][display_class<=4] {text-name:"[name]";text-size:12;}
+      [display_class>=5][display_class<=6] {text-name:"[name]";text-size:11;}
     }
     [zoom>=12][zoom<=13] {
-      [display_class>=0][display_class<=6] {text-name:"[name] + ', ' + [display_class]";text-size:13;}
-      [display_class>=7][display_class<=8] {text-name:"[name] + ', ' + [display_class]";text-size:11;}
+      [display_class>=0][display_class<=6] {text-name:"[name]";text-size:13;}
+      [display_class>=7][display_class<=8] {text-name:"[name]";text-size:11;}
     }
     [zoom>=14][zoom<=15] {
       [display_class>=0][display_class<=4] {text-name:"[name]";text-size:14;}
@@ -122,7 +126,6 @@
     /* forests and parks */
     [class=1056],[class=1062] {
       text-fill:#006837;
-      text-min-distance:10;
       [class=1056] {text-transform:uppercase;}
     }
     /* native reservations, military and national monuments */
@@ -210,6 +213,7 @@
     text-name:"''";
     text-face-name: "Open Sans Regular";
     text-fill:#666666;
+    text-min-distance:10;
     text-halo-radius:2;
     text-wrap-width:50;
     text-placement-type: simple;
@@ -248,6 +252,7 @@
       text-name:"[name]";
       text-face-name:"Open Sans Regular";
       text-fill:#666666;
+      text-min-distance:10;
       text-halo-radius:2;
       text-halo-fill:@background_16-18;
       text-wrap-width:120;
@@ -279,6 +284,7 @@
     text-name:"[name]";
     text-face-name:"Open Sans Italic";
     text-fill:#629243;
+    text-min-distance:10;
     text-halo-radius:2;
     text-halo-fill:@background_13-15;
     text-halo-fill:@background_16-18;
@@ -291,6 +297,7 @@
     text-name:"[name]";
     text-face-name:"Open Sans Italic";
     text-fill:#666666;
+    text-min-distance:10;
     text-halo-radius:2;
     text-halo-fill:@background_16-18;
     text-wrap-width:20;

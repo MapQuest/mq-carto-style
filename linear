@@ -250,13 +250,19 @@
       line-cap:round;line-join:round;
     }
   }
-  ::major_road4[rclass=4][ramp!=true] {
-    ::casing {
-      [zoom=15] {line-color:#e6e6e6;line-cap:round;line-join:round;
-        [restriction=true] {line-color:#c9c9c9}
-      }
+  ::major_road4_casing[rclass=4][ramp!=true] {
+    [zoom=15] {line-color:#e6e6e6;line-cap:round;line-join:round;
+      [restriction=true] {line-color:#c9c9c9}
     }
-    ::fill[zoom>=12][zoom<=15] {
+  }
+  ::major_road2-3_casing[rclass>=2][rclass<=3][ramp!=true] {
+    [zoom=15] {line-color:#e3d58f;line-cap:round;line-join:round;}
+  }
+  ::major_road1_casing[rclass=1][ramp!=true] {
+    [zoom=15] {line-color:#f2cd88;line-cap:round;line-join:round;}
+  }
+  ::major_road4_fill[rclass=4][ramp!=true] {
+    [zoom>=12][zoom<=15] {
       [zoom=12] {line-color:#dedacb;}
       [zoom>=13][zoom<=15] {
         line-color:#fbfaf6;
@@ -265,11 +271,8 @@
       line-cap:round;line-join:round;
     }
   }
-  ::major_road2-3[rclass>=2][rclass<=3][ramp!=true] {
-    ::casing {
-      [zoom=15] {line-color:#e3d58f;line-cap:round;line-join:round;}
-    }
-    ::fill[zoom>=12][zoom<=15] {
+  ::major_road2-3_fill[rclass>=2][rclass<=3][ramp!=true] {
+    [zoom>=12][zoom<=15] {
       [zoom=12] {line-color:#ffdc73;}
       [zoom=13] {line-color:#ffe37d;}
       [zoom=14] {line-color:#ffe485;}
@@ -277,11 +280,8 @@
       line-cap:round;line-join:round;
     }
   }
-  ::major_road1[rclass=1][ramp!=true] {
-    ::casing {
-      [zoom=15] {line-color:#f2cd88;line-cap:round;line-join:round;}
-    }
-    ::fill[zoom>=12][zoom<=15] {
+  ::major_road1_fill[rclass=1][ramp!=true] {
+    [zoom>=12][zoom<=15] {
       [zoom=12] {line-color:#ffc87a;}
       [zoom=13] {line-color:#ffd68f;}
       [zoom=14] {line-color:#ffd182;}
@@ -289,6 +289,8 @@
       line-cap:round;line-join:round;
     }
   }
+
+
   ::freeway_ramp[rclass=0][ramp=true] {      /* includes free and toll ramps */
     ::casing {
       [zoom=15] {
@@ -442,8 +444,6 @@
       [restriction=true] {line-color:#ebebeb}
     }
   }
-
-
   ::major_road4_casing[rclass=4][ramp!=true] {
     [zoom>=16][zoom<=18] {
       line-color:#dbdbdb;line-cap:round;line-join:round;}
@@ -467,7 +467,7 @@
       line-color:#f2c97c;line-cap:round;line-join:round;}
     ::oneway[zoom>=16][zoom<=18][oneway=true][ramp!=true][rclass=1] {
       [zoom=15] {line-pattern-file:url(markers/oneway_1_15.png);}
-      [zoom>=16][zoom<=18] {line-pattern-file:url(markers/oneway_1_16-18.png);}
+      [zoom>=16][zoom<=18] {line-pattern-file:url(markers/oneway_1_15.png);}
       line-pattern-smooth:1;
     }
   }
@@ -651,37 +651,31 @@
       [zoom=15] {line-width:2;}
     }
   }
-  ::major_road4[rclass=4][ramp!=true] {
-    ::casing {
-      [zoom=15] {line-width:4;}
-    }
-    ::fill {
-      [zoom=12] {line-width:0.5;}
-      [zoom=13] {line-width:1;}
-      [zoom=14] {line-width:2;}
-      [zoom=15] {line-width:2;}
-    }
+  ::major_road4_casing[rclass=4][ramp!=true] {
+    [zoom=15] {line-width:4;}
   }
-  ::major_road2-3[rclass>=2][rclass<=3][ramp!=true] {
-    ::casing {
-      [zoom=15] {line-width:4;}
-    }
-    ::fill {
-      [zoom=12] {line-width:1;}
-      [zoom=13] {line-width:2;}
-      [zoom>=14][zoom<=15] {line-width:3;}
-    }
+  ::major_road2-3_casing[rclass>=2][rclass<=3][ramp!=true] {
+    [zoom=15] {line-width:4;}
   }
-  ::major_road1[rclass=1][ramp!=true] {
-    ::casing {
-      [zoom=15] {line-width:6;}
-    }
-    ::fill {
-      [zoom=12] {line-width:2;}
-      [zoom=13] {line-width:3;}
-      [zoom=14] {line-width:4;}
-      [zoom=15] {line-width:3;}
-    }
+  ::major_road1_casing[rclass=1][ramp!=true] {
+    [zoom=15] {line-width:6;}
+  }
+  ::major_road4_fill[rclass=4][ramp!=true] {
+    [zoom=12] {line-width:0.5;}
+    [zoom=13] {line-width:1;}
+    [zoom=14] {line-width:2;}
+    [zoom=15] {line-width:2;}
+  }
+  ::major_road2-3_fill[rclass>=2][rclass<=3][ramp!=true] {
+    [zoom=12] {line-width:1;}
+    [zoom=13] {line-width:2;}
+    [zoom>=14][zoom<=15] {line-width:3;}
+  }
+  ::major_road1_fill[rclass=1][ramp!=true] {
+    [zoom=12] {line-width:2;}
+    [zoom=13] {line-width:3;}
+    [zoom=14] {line-width:4;}
+    [zoom=15] {line-width:3;}
   }
   ::freeway_ramp[rclass=0][ramp=true] {  /* includes free and toll ramps */
     ::casing {
