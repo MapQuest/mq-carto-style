@@ -73,7 +73,7 @@
   ::heathland[rclass=5] {[zoom>=16] {polygon-fill:#b9e1bf;}}
   ::military[rclass=17] {[zoom>=16] {polygon-fill:#dee1d5;}}
   ::indigenous_lands[rclass=23] {[zoom>=16] {polygon-fill:#e8e3c6;}}
-  ::national_park[rclass=24] {[zoom>=16] {polygon-fill:#b7d795;}}
+  ::national_park[rclass=24] {[zoom>=16] {polygon-fill:#c3dda6;}}
   ::amusement_park[rclass=13] {[zoom>=16] {polygon-fill:#c5e8e5;}}
   ::airport[rclass=11] {[zoom>=16] {polygon-fill:#e1e3dd;}}
   ::runway[rclass=12] {[zoom>=16] {polygon-fill:#e8eae5;}}

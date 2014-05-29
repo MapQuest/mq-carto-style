@@ -289,8 +289,6 @@
       line-cap:round;line-join:round;
     }
   }
-
-
   ::freeway_ramp[rclass=0][ramp=true] {      /* includes free and toll ramps */
     ::casing {
       [zoom=15] {
@@ -406,15 +404,16 @@
   }
   ::service_road[rclass=6] {
     ::casing[zoom>=16][zoom<=18] {
-      line-color:#e6e6e6;line-cap:round;line-join:round;
+      line-color:#d6d6d6;line-cap:round;line-join:round;
       [restriction=true] {line-color:#c9c9c9}
     }
     ::fill[zoom>=16][zoom<=18] {
-      line-color:#ffffff;line-cap:round;line-join:round;
+      line-color:#ebebeb;line-cap:round;line-join:round;
       [restriction=true] {line-color:#ebebeb}
     }
     ::oneway[zoom>=16][zoom<=18][oneway=true][ramp!=true][rclass=6] {
-      line-pattern-file:url(markers/oneway_4-6_16-18.png);
+      [zoom=16] {line-pattern-file:url(markers/oneway_4-6_16.png);}
+      [zoom>=17][zoom<=18] {line-pattern-file:url(markers/oneway_4-6_17-18.png);}
       line-pattern-smooth:1;
     }
   }
@@ -428,7 +427,8 @@
       [restriction=true] {line-color:#ebebeb}
     }
     ::oneway[zoom>=16][zoom<=18][oneway=true][ramp!=true][rclass=5] {
-      line-pattern-file:url(markers/oneway_4-6_16-18.png);
+      [zoom=16] {line-pattern-file:url(markers/oneway_4-6_16.png);}
+      [zoom>=17][zoom<=18] {line-pattern-file:url(markers/oneway_4-6_17-18.png);}
       line-pattern-smooth:1;
     }
   }
@@ -448,37 +448,23 @@
     [zoom>=16][zoom<=18] {
       line-color:#dbdbdb;line-cap:round;line-join:round;}
       [restriction=true] {line-color:#969696}
-    ::oneway[zoom>=16][zoom<=18][oneway=true][ramp!=true][rclass=4] {
-      line-pattern-file:url(markers/oneway_4-6_16-18.png);
-      line-pattern-smooth:1;
-    }
   }
   ::major_road2-3_casing[rclass>=2][rclass<=3][ramp!=true] {
     [zoom>=16][zoom<=18] {
       line-color:#e3dd86;line-cap:round;line-join:round;}
-    ::oneway[zoom>=16][zoom<=18][oneway=true][ramp!=true][rclass>=2][rclass<=3] {
-      [zoom=16] {line-pattern-file:url(markers/oneway_2-3_16.png);}
-      [zoom>=17][zoom<=18] {line-pattern-file:url(markers/oneway_2-3_17-18.png);}
-      line-pattern-smooth:1;
-    }
   }
   ::major_road1_casing[rclass=1][ramp!=true] {
     [zoom>=16][zoom<=18] {
       line-color:#f2c97c;line-cap:round;line-join:round;}
-    ::oneway[zoom>=16][zoom<=18][oneway=true][ramp!=true][rclass=1] {
-      [zoom=15] {line-pattern-file:url(markers/oneway_1_15.png);}
-      [zoom>=16][zoom<=18] {line-pattern-file:url(markers/oneway_1_15.png);}
-      line-pattern-smooth:1;
-    }
   }
-
   ::major_road4_fill[rclass=4][ramp!=true] {
     [zoom>=16][zoom<=18] {
       line-color:#ffffff;line-cap:round;line-join:round;
       [restriction=true] {line-color:#d2d2d2}
     }
     ::oneway[zoom>=16][zoom<=18][oneway=true][ramp!=true][rclass=4] {
-      line-pattern-file:url(markers/oneway_4-6_16-18.png);
+      [zoom=16] {line-pattern-file:url(markers/oneway_4-6_16.png);}
+      [zoom>=17][zoom<=18] {line-pattern-file:url(markers/oneway_4-6_17-18.png);}
       line-pattern-smooth:1;
     }
   }
@@ -495,8 +481,8 @@
     [zoom>=16][zoom<=18] {
       line-color:#f5e5c6;line-cap:round;line-join:round;}
     ::oneway[zoom>=16][zoom<=18][oneway=true][ramp!=true][rclass=1] {
-      [zoom=15] {line-pattern-file:url(markers/oneway_1_15.png);}
-      [zoom>=16][zoom<=18] {line-pattern-file:url(markers/oneway_1_16-18.png);}
+      [zoom=16] {line-pattern-file:url(markers/oneway_1_16.png);}
+      [zoom>=17][zoom<=18] {line-pattern-file:url(markers/oneway_1_17-18.png);}
       line-pattern-smooth:1;
     }
   }
@@ -733,14 +719,14 @@
   }
   ::service_road[rclass=6] {
     ::casing {
-      [zoom=16] {line-width:6;}
-      [zoom=17] {line-width:8;}
-      [zoom=18] {line-width:9;}
-    }
-    ::fill {
-      [zoom=16] {line-width:3;}
+      [zoom=16] {line-width:5;}
       [zoom=17] {line-width:5;}
       [zoom=18] {line-width:6;}
+    }
+    ::fill {
+      [zoom=16] {line-width:2;}
+      [zoom=17] {line-width:2;}
+      [zoom=18] {line-width:3;}
     }
   }
   ::minor_road[rclass=5][ramp!=true] {
@@ -767,7 +753,6 @@
       [zoom=18] {line-width:7;}
     }
   }
-
 
   ::major_road4_casing[rclass=4][ramp!=true] {
       [zoom=16] {line-width:7;}

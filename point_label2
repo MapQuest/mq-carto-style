@@ -23,6 +23,7 @@
     [zoom>=14][zoom<=15][display_class>=0][display_class<=4] {text-name:"[name]";text-size:15;}
     [zoom>=16][zoom<=18][display_class>=0][display_class<=4] {text-name:"[name]";text-size:16;}
     [zoom>=7][zoom<=9] {text-character-spacing:2}
+    [zoom>=10][zoom<=18] {text-character-spacing:3}
     text-fill:#006837;
     text-min-distance:10;
     text-halo-radius:2;
@@ -45,6 +46,7 @@
     [zoom>=14][zoom<=15][display_class>=0][display_class<=4] {text-name:"[name]";text-size:15;}
     [zoom>=16][zoom<=18][display_class>=0][display_class<=4] {text-name:"[name]";text-size:16;}
     [zoom>=7][zoom<=9] {text-character-spacing:2}
+    [zoom>=10][zoom<=18] {text-character-spacing:3}
     text-fill:#006837;
     text-min-distance:10;
     text-halo-radius:2;
@@ -59,9 +61,19 @@
   ::water[class=1050],[class=1051],[class=1052],[class=1054] {
     text-name:"''";
     text-face-name:"Open Sans Italic";
-    [class=1050] {text-name:"[name]"}
-    [class=1051],[class=1052] {
-      [zoom>=8][zoom<=18] {text-name:"[name]"}
+    [class=1050] {
+      [zoom>=4][zoom<=5][display_class<=1] {text-name:"[name]"}
+      [zoom>=6][zoom<=7][display_class<=2] {text-name:"[name]"}
+      [zoom>=8][zoom<=9][display_class<=3] {text-name:"[name]"}
+      [zoom>=10][zoom<=18] {text-name:"[name]"}
+    }
+    [class=1051] {
+      [zoom>=8][zoom<=18][display_class=0] {text-name:"[name]"}
+      [zoom>=9][zoom<=18][display_class<=1] {text-name:"[name]"}
+    }
+    [class=1052] {
+      [zoom>=9][zoom<=18][display_class=0] {text-name:"[name]"}
+      [zoom>=10][zoom<=18][display_class<=1] {text-name:"[name]"}
     }
     [class=1054] {
       [display_class=5][zoom>=12][zoom<=18] {text-name:"[name]"}
@@ -92,13 +104,15 @@
     }
     text-fill:#2b5377;
     text-min-distance:10;
-    text-halo-radius:2;
     text-wrap-width:20;
+/*  text halo has been removed for all water features
+    text-halo-radius:2;
     [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
     [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
     [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12}
     [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
     [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
+*/
   }
   ::POI1[class=1057],[class=1056],[class=1062],[class=1085],[class=1075],[class=1097] {
     text-name:"''";
@@ -106,11 +120,20 @@
     text-halo-radius:2;
     text-wrap-width:50;
     text-min-distance:10;
-    [zoom>=7][zoom<=9] {text-wrap-width:20;text-character-spacing:2;}
-    [zoom>=7][zoom<=8][display_class=0] {text-name:"[name]";text-size:11;}
-    [zoom=9][display_class>=0][display_class<=3] {text-name:"[name]";text-size:11;}
+    [zoom>=7][zoom<=8] {}
+    [zoom>=7][zoom<=8][display_class=0] {
+      text-name:"[name]";
+      text-size:11;
+      text-wrap-width:20;
+      text-character-spacing:2;
+    }
+    [zoom=9][display_class>=0][display_class<=3] {
+      text-name:"[name]";
+      text-size:11;
+      [display_class=0] {text-character-spacing:2}
+    }
     [zoom>=10][zoom<=11] {
-      [display_class=0] {text-name:"[name]";text-size:14;text-character-spacing:2;}
+      [display_class>=0] {text-name:"[name]";text-size:14;text-character-spacing:2;}
       [display_class>=1][display_class<=4] {text-name:"[name]";text-size:12;}
       [display_class>=5][display_class<=6] {text-name:"[name]";text-size:11;}
     }
@@ -126,14 +149,17 @@
     [zoom>=16][zoom<=18] {
       [display_class>=0][display_class<=4] {text-name:"[name]";text-size:15;}
       [display_class>=5][display_class<=9] {text-name:"[name]";text-size:14;}
-      [display_class>=10] {text-name:"[name]";text-size:11;}
+      [display_class>=10] {text-name:"[name]";text-size:13;}
     }
     /* beaches */
     [class=1057] {text-fill:#b3a098;}
     /* forests and parks */
     [class=1056],[class=1062] {
       text-fill:#006837;
-      [class=1056] {text-transform:uppercase;}
+      [class=1056] {
+        text-transform:uppercase;
+        [zoom=10] {text-character-spacing:2}
+      }
     }
     /* native reservations, military and national monuments */
     [class=1085] {text-fill:#82592a}

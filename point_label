@@ -47,11 +47,11 @@
       [zoom>=7][zoom<=8] {shield-halo-fill:@background_7-8}
       [zoom>=9][zoom<=12] {shield-halo-fill:@background_9-12}
       [zoom=13] {shield-halo-fill:@background_13-15}
-      [zoom>=4][zoom<=5] {shield-size:@city_text_0_45;shield-text-dy:-11;}
-      [zoom=6] {shield-size:@city_text_0_6;shield-text-dy:-12;}
-      [zoom>=7][zoom<=9] {shield-size:@city_text_0_789;shield-text-dy:-12;}
-      [zoom>=10][zoom<=11] {shield-size:@city_text_0_1011;shield-text-dy:-15;}
-      [zoom>=12][zoom<=13] {shield-size:@city_text_0_1213;shield-text-dy:-16;}
+      [zoom>=4][zoom<=5] {shield-size:@city_text_0_45;shield-text-dy:-11;shield-dy:5.5;}
+      [zoom=6] {shield-size:@city_text_0_6;shield-text-dy:-12;shield-dy:6;}
+      [zoom>=7][zoom<=9] {shield-size:@city_text_0_789;shield-text-dy:-12;shield-dy:6;}
+      [zoom>=10][zoom<=11] {shield-size:@city_text_0_1011;shield-text-dy:-15;shield-dy:7.5;}
+      [zoom>=12][zoom<=13] {shield-size:@city_text_0_1213;shield-text-dy:-16;shield-dy:8;}
     }
     /* national capital point labels only */
     [zoom>=14][zoom<=18] {
@@ -75,18 +75,15 @@
       shield-halo-radius:1;
       shield-file:url("markers/capital2.svg");
       shield-min-distance:15;
-      shield-text-dy:-20;
       [zoom>=4][zoom<=6] {shield-halo-fill:@background_2-6}
       [zoom>=7][zoom<=8] {shield-halo-fill:@background_7-8}
       [zoom>=9][zoom<=12] {shield-halo-fill:@background_9-12}
       [zoom=13] {shield-halo-fill:@background_13-15;shield-text-transform:uppercase;}
-      [zoom>=4][zoom<=5] {shield-size:@city_text_0_45;shield-text-dy:-14;}
-      [zoom=6] {shield-size:@city_text_0_6;shield-text-dy:-15;}
-      [zoom>=7][zoom<=9] {shield-size:@city_text_0_789;shield-text-dy:-15;}
-      [zoom>=10][zoom<=11] {shield-size:@city_text_0_1011;shield-text-dy:-17;}
-      [zoom>=12][zoom<=13] {shield-size:@city_text_0_1213;shield-text-dy:-18;
-        shield-justify-alignment:left;
-      }
+      [zoom>=4][zoom<=5] {shield-size:@city_text_0_45;shield-text-dy:-14;shield-dy:7;}
+      [zoom=6] {shield-size:@city_text_0_6;shield-text-dy:-15;shield-dy:7.5;}
+      [zoom>=7][zoom<=9] {shield-size:@city_text_0_789;shield-text-dy:-15;shield-dy:7.5;}
+      [zoom>=10][zoom<=11] {shield-size:@city_text_0_1011;shield-text-dy:-17;shield-dy:8.5;}
+      [zoom>=12][zoom<=13] {shield-size:@city_text_0_1213;shield-text-dy:-18;shield-dy:9;}
     }
     /* state capital point labels only */
     [zoom>=14][zoom<=18] {
@@ -104,21 +101,21 @@
   ::city_0[class=1020][display_class=0] {
     /* city point markers with labels */
     [zoom>=4][zoom<=13] {
-        shield-name:"[name]";
-        shield-face-name:"Open Sans Regular";
-        shield-fill:#000000;
-        shield-file:url("markers/city1.svg");
-        shield-halo-radius:1;
-        [zoom>=4][zoom<=5] {shield-size:@city_text_0_45;shield-text-dy:-13;}
-        [zoom=6] {shield-size:@city_text_0_6;shield-text-dy:-14;}
-        [zoom>=7][zoom<=9] {shield-size:@city_text_0_789;shield-text-dy:-15;}
-        [zoom>=10][zoom<=11] {shield-size:@city_text_0_1011;shield-text-dy:-16;}
-        [zoom>=12][zoom<=13] {shield-size:@city_text_0_1213;shield-text-dy:-17;}
-        [zoom=13] {shield-text-transform:uppercase;}
-        [zoom>=4][zoom<=6] {shield-halo-fill:@background_2-6}
-        [zoom>=7][zoom<=8] {shield-halo-fill:@background_7-8}
-        [zoom>=9][zoom<=12] {shield-halo-fill:@background_9-12}
-        [zoom=13] {shield-halo-fill:@background_13-15}
+      shield-name:"[name]";
+      shield-face-name:"Open Sans Regular";
+      shield-fill:#000000;
+      shield-file:url("markers/city1.svg");
+      shield-halo-radius:1;
+      [zoom>=4][zoom<=5] {shield-size:@city_text_0_45;shield-text-dy:-13;shield-dy:6.5;}
+      [zoom=6] {shield-size:@city_text_0_6;shield-text-dy:-14;shield-dy:7;}
+      [zoom>=7][zoom<=9] {shield-size:@city_text_0_789;shield-text-dy:-15;shield-dy:7.5;}
+      [zoom>=10][zoom<=11] {shield-size:@city_text_0_1011;shield-text-dy:-16;shield-dy:8;}
+      [zoom>=12][zoom<=13] {shield-size:@city_text_0_1213;shield-text-dy:-17;shield-dy:8.5;}
+      [zoom=13] {shield-text-transform:uppercase;}
+      [zoom>=4][zoom<=6] {shield-halo-fill:@background_2-6}
+      [zoom>=7][zoom<=8] {shield-halo-fill:@background_7-8}
+      [zoom>=9][zoom<=12] {shield-halo-fill:@background_9-12}
+      [zoom=13] {shield-halo-fill:@background_13-15}
     }
     /* city point labels only */
     [zoom>=14][zoom<=18] {
@@ -133,7 +130,6 @@
       text-size:@city_text_0_14;
     }
   }
-  
   /*-----country labels——*/
   ::country_labels[class=1030][zoom>=4][zoom<=9] {
     text-name:"[name]";
@@ -257,19 +253,19 @@
       [zoom>=9][zoom<=12] {shield-halo-fill:@background_9-12}
       [zoom=13] {shield-halo-fill:@background_13-15;shield-text-transform:uppercase;}
       [display_class=1] {
-        [zoom>=4][zoom<=5] {shield-size:@city_text_1_45;shield-text-dy:-13; shield-fill:#4d4d4d;}
-        [zoom>=6][zoom<=7] {shield-size:@city_text_1_67;shield-text-dy:-14;}
-        [zoom>=8][zoom<=9] {shield-size:@city_text_1_89;shield-text-dy:-14;}
-        [zoom>=10][zoom<=11] {shield-size:@city_text_1_1011;shield-text-dy:-15;}
-        [zoom>=12][zoom<=13] {shield-size:@city_text_1_1213;shield-text-dy:-18;}
+        [zoom>=4][zoom<=5] {shield-size:@city_text_1_45;shield-text-dy:-13;shield-dy:6.5;shield-fill:#4d4d4d;}
+        [zoom>=6][zoom<=7] {shield-size:@city_text_1_67;shield-text-dy:-14;shield-dy:7;}
+        [zoom>=8][zoom<=9] {shield-size:@city_text_1_89;shield-text-dy:-14;shield-dy:7;}
+        [zoom>=10][zoom<=11] {shield-size:@city_text_1_1011;shield-text-dy:-15;shield-dy:7.5;}
+        [zoom>=12][zoom<=13] {shield-size:@city_text_1_1213;shield-text-dy:-18;shield-dy:9;}
       }
       [display_class=2] {
         shield-fill:#4d4d4d;
-        [zoom>=4][zoom<=5] {shield-size:@city_text_2_45;shield-text-dy:-12;}
-        [zoom>=6][zoom<=7] {shield-size:@city_text_2_67;shield-text-dy:-12;}
-        [zoom>=8][zoom<=9] {shield-size:@city_text_2_89;shield-text-dy:-13;}
-        [zoom>=10][zoom<=11] {shield-size:@city_text_2_1011;shield-text-dy:-14;}
-        [zoom>=12][zoom<=13] {shield-size:@city_text_2_1213;shield-text-dy:-16;}
+        [zoom>=4][zoom<=5] {shield-size:@city_text_2_45;shield-text-dy:-12;shield-dy:6;}
+        [zoom>=6][zoom<=7] {shield-size:@city_text_2_67;shield-text-dy:-12;shield-dy:6;}
+        [zoom>=8][zoom<=9] {shield-size:@city_text_2_89;shield-text-dy:-13;shield-dy:6.5;}
+        [zoom>=10][zoom<=11] {shield-size:@city_text_2_1011;shield-text-dy:-14;shield-dy:7;}
+        [zoom>=12][zoom<=13] {shield-size:@city_text_2_1213;shield-text-dy:-16;shield-dy:8;}
       }
     }
     /* state capital point labels only */
@@ -300,21 +296,21 @@
       [display_class=1] {
         shield-min-distance:15;
         shield-file:url("markers/city2.svg");
-        [zoom>=4][zoom<=5] {shield-size:@city_text_1_45;shield-text-dy:-12; shield-fill:#4d4d4d;}
-        [zoom>=6][zoom<=7] {shield-size:@city_text_1_67;shield-text-dy:-13;}
-        [zoom>=8][zoom<=9] {shield-size:@city_text_1_89;shield-text-dy:-14;}
-        [zoom>=10][zoom<=11] {shield-size:@city_text_1_1011;shield-text-dy:-15;}
-        [zoom>=12][zoom<=13] {shield-size:@city_text_1_1213;shield-text-dy:-16;}
+        [zoom>=4][zoom<=5] {shield-size:@city_text_1_45;shield-text-dy:-12;shield-dy:6;shield-fill:#4d4d4d;}
+        [zoom>=6][zoom<=7] {shield-size:@city_text_1_67;shield-text-dy:-13;shield-dy:6.5;}
+        [zoom>=8][zoom<=9] {shield-size:@city_text_1_89;shield-text-dy:-14;shield-dy:7;}
+        [zoom>=10][zoom<=11] {shield-size:@city_text_1_1011;shield-text-dy:-15;shield-dy:7.5;}
+        [zoom>=12][zoom<=13] {shield-size:@city_text_1_1213;shield-text-dy:-16;shield-dy:8;}
       }
       [display_class=2][zoom>=5][zoom<=13] {
         shield-fill:#4d4d4d;
         shield-min-distance:30;
         shield-file:url("markers/city2.svg");
-        [zoom>=4][zoom<=5] {shield-size:@city_text_2_45;shield-text-dy:-11;}
-        [zoom>=6][zoom<=7] {shield-size:@city_text_2_67;shield-text-dy:-12;}
-        [zoom>=8][zoom<=9] {shield-size:@city_text_2_89;shield-text-dy:-13;}
-        [zoom>=10][zoom<=11] {shield-size:@city_text_2_1011;shield-text-dy:-14;}
-        [zoom>=12][zoom<=13] {shield-size:@city_text_2_1213;shield-text-dy:-15;}
+        [zoom>=4][zoom<=5] {shield-size:@city_text_2_45;shield-text-dy:-11;shield-dy:5.5;}
+        [zoom>=6][zoom<=7] {shield-size:@city_text_2_67;shield-text-dy:-12;shield-dy:6;}
+        [zoom>=8][zoom<=9] {shield-size:@city_text_2_89;shield-text-dy:-13;shield-dy:6.5;}
+        [zoom>=10][zoom<=11] {shield-size:@city_text_2_1011;shield-text-dy:-14;shield-dy:7;}
+        [zoom>=12][zoom<=13] {shield-size:@city_text_2_1213;shield-text-dy:-15;shield-dy:7.5;}
       }
     }
     /* city point labels only */
@@ -347,14 +343,14 @@
       [zoom=13] {shield-halo-fill:@background_13-15}
       [display_class=3] {
         shield-fill:#666666;
-        [zoom>=4][zoom<=9] {shield-size:@city_text_3_456789;shield-text-dy:-8;}
-        [zoom>=10][zoom<=11] {shield-size:@city_text_3_1011;shield-text-dy:-10;}
-        [zoom>=12][zoom<=13] {shield-size:@city_text_3_1213;shield-text-dy:-12;}
+        [zoom>=4][zoom<=9] {shield-size:@city_text_3_456789;shield-text-dy:-8;shield-dy:4;}
+        [zoom>=10][zoom<=11] {shield-size:@city_text_3_1011;shield-text-dy:-10;shield-dy:5;}
+        [zoom>=12][zoom<=13] {shield-size:@city_text_3_1213;shield-text-dy:-12;shield-dy:6;}
       }
       [display_class>3] {
         shield-fill:#666666;
-        [zoom>=4][zoom<=9] {shield-size:@city_text_4_456789;shield-text-dy:-8;}
-        [zoom>=10][zoom<=13] {shield-size:@city_text_4_10111213;shield-text-dy:-10;}
+        [zoom>=4][zoom<=9] {shield-size:@city_text_4_456789;shield-text-dy:-8;shield-dy:4;}
+        [zoom>=10][zoom<=13] {shield-size:@city_text_4_10111213;shield-text-dy:-10;shield-dy:5;}
       }
     }
     /* national capital point labels only */
@@ -386,14 +382,14 @@
       [zoom=13] {shield-halo-fill:@background_13-15;shield-text-transform:uppercase;}
       [display_class=3] {
         shield-fill:#666666;
-        [zoom>=4][zoom<=9] {shield-size:@city_text_3_456789;shield-text-dy:-12;}
-        [zoom>=10][zoom<=11] {shield-size:@city_text_3_1011;shield-text-dy:-14;}
-        [zoom>=12][zoom<=13] {shield-size:@city_text_3_1213;shield-text-dy:-15;}
+        [zoom>=4][zoom<=9] {shield-size:@city_text_3_456789;shield-text-dy:-12;shield-dy:6;}
+        [zoom>=10][zoom<=11] {shield-size:@city_text_3_1011;shield-text-dy:-14;shield-dy:7;}
+        [zoom>=12][zoom<=13] {shield-size:@city_text_3_1213;shield-text-dy:-15;shield-dy:7.5;}
       }
       [display_class>3] {
         shield-fill:#666666;
-        [zoom>=4][zoom<=9] {shield-size:@city_text_4_456789;shield-text-dy:-12;}
-        [zoom>=10][zoom<=13] {shield-size:@city_text_4_10111213;shield-text-dy:-12;}
+        [zoom>=4][zoom<=9] {shield-size:@city_text_4_456789;shield-text-dy:-12;shield-dy:6;}
+        [zoom>=10][zoom<=13] {shield-size:@city_text_4_10111213;shield-text-dy:-12;shield-dy:6;}
       }
     }
     /* state capital point labels only */
@@ -693,35 +689,52 @@
   /* — city labels — */
   ::city_3_and_up[class=1020][display_class>=3] {
     /* city point markers with labels */
-    [zoom>=6][zoom<=13] {
-      shield-name:"''";
-      shield-face-name:"Open Sans Regular";
-      shield-fill:#666666;
-      shield-min-distance:25;
-      shield-file:url("markers/city3.svg");
-      shield-halo-radius:1;
-      [zoom=6][display_class=3] {
+    [zoom>=7][zoom<=13] {
+      [zoom=7][display_class=3] {
         shield-name:"[name]";
+        shield-face-name:"Open Sans Regular";
+        shield-fill:#666666;
+        shield-min-distance:25;
+        shield-file:url("markers/city3.svg");
+        shield-halo-radius:1;
+        shield-size:@city_text_3_456789;
+        shield-text-dy:-10;
+        shield-dy:5;
         shield-halo-fill:@background_2-6;
       }
-      [zoom>=7][zoom<=18] {shield-name:"[name]"}
-      [zoom>=7][zoom<=8] {shield-halo-fill:@background_7-8}
-      [zoom>=9][zoom<=12] {shield-halo-fill:@background_9-12}
-      [zoom=13] {shield-halo-fill:@background_13-15}
-      [display_class=3] {
-        [zoom>=6][zoom<=9] {shield-size:@city_text_3_456789;shield-text-dy:-10;}
-        [zoom>=10][zoom<=11] {shield-size:@city_text_3_1011;shield-text-dy:-11;}
-        [zoom>=12][zoom<=13] {shield-size:@city_text_3_1213;shield-text-dy:-12;}
-      }
-      [display_class>3][zoom>=7][zoom<=18] {
+      [zoom=8][display_class<=4] {
+        shield-name:"[name]";
+        shield-face-name:"Open Sans Regular";
         shield-fill:#666666;
-        shield-min-distance:35;
-        [zoom>=4][zoom<=9] {shield-size:@city_text_4_456789;shield-text-dy:-10;}
-        [zoom>=10][zoom<=13] {shield-size:@city_text_4_10111213;shield-text-dy:-11;}
+        shield-min-distance:25;
+        shield-file:url("markers/city3.svg");
+        shield-halo-radius:1;
+        shield-size:@city_text_3_456789;
+        shield-text-dy:-10;
+        shield-dy:5;
+        shield-halo-fill:@background_7-8;
       }
-      [display_class>4][zoom>=7][zoom<=18] {
-        shield-fill:#808080;
-        shield-min-distance:50;
+      [zoom>=9][zoom<=13] {
+        shield-name:"[name]";
+        shield-face-name:"Open Sans Regular";
+        shield-fill:#666666;
+        shield-min-distance:25;
+        shield-file:url("markers/city3.svg");
+        shield-halo-radius:1;
+        [zoom=12] {shield-halo-fill:@background_9-12;}
+        [zoom=13] {shield-halo-fill:@background_13-15;}
+        [display_class=3] {
+          [zoom>=7][zoom<=9] {shield-size:@city_text_3_456789;shield-text-dy:-10;shield-dy:5;}
+          [zoom>=10][zoom<=11] {shield-size:@city_text_3_1011;shield-text-dy:-11;shield-dy:5.5;}
+          [zoom>=12][zoom<=13] {shield-size:@city_text_3_1213;shield-text-dy:-12;shield-dy:6;}
+        }
+        [display_class>3] {
+          shield-fill:#666666;
+          shield-min-distance:35;
+          [zoom>=7][zoom<=9] {shield-size:@city_text_4_456789;shield-text-dy:-10;shield-dy:5;}
+          [zoom>=10][zoom<=13] {shield-size:@city_text_4_10111213;shield-text-dy:-11;shield-dy:5.5;}
+        }
+        [display_class>4] {shield-fill:#808080;shield-min-distance:50;}
       }
     }
     /* city point labels only */
@@ -734,9 +747,7 @@
       [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
       [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
       [display_class=3] {text-size:@city_text_3_14}
-      [display_class>3] {
-        text-fill:#666666;text-size:@city_text_4_14;
-      }
+      [display_class>3] {text-fill:#666666;text-size:@city_text_4_14;}
       [display_class>4] {text-fill:#808080;}
     }
   }  
