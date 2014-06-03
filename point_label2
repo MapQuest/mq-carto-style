@@ -26,14 +26,16 @@
     [zoom>=10][zoom<=18] {text-character-spacing:3}
     text-fill:#006837;
     text-min-distance:10;
-    text-halo-radius:2;
     text-wrap-width:50;
     text-transform:uppercase;
+/*  text halo has been removed for all park features
+    text-halo-radius:2;
     [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
     [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
     [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12}
     [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
     [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
+*/
   }
   ::national_forest[class=1055][zoom>=7][zoom<=18] {
     text-name:"[name]";
@@ -49,14 +51,16 @@
     [zoom>=10][zoom<=18] {text-character-spacing:3}
     text-fill:#006837;
     text-min-distance:10;
-    text-halo-radius:2;
     text-wrap-width:50;
     text-transform:uppercase;
+/*  text halo has been removed for all forest features
+    text-halo-radius:2;
     [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
     [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
     [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12}
     [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
     [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
+*/
   }
   ::water[class=1050],[class=1051],[class=1052],[class=1054] {
     text-name:"''";
@@ -65,7 +69,8 @@
       [zoom>=4][zoom<=5][display_class<=1] {text-name:"[name]"}
       [zoom>=6][zoom<=7][display_class<=2] {text-name:"[name]"}
       [zoom>=8][zoom<=9][display_class<=3] {text-name:"[name]"}
-      [zoom>=10][zoom<=18] {text-name:"[name]"}
+      [zoom>=10][zoom<=11][display_class<=4] {text-name:"[name]"}
+      [zoom>=12][zoom<=18] {text-name:"[name]"}
     }
     [class=1051] {
       [zoom>=8][zoom<=18][display_class=0] {text-name:"[name]"}
@@ -81,12 +86,12 @@
     }
     [zoom>=4][zoom<=9][display_class=0] {text-name:"[name]";text-size:11;text-character-spacing:2;}
     [zoom>=10][zoom<=11] {
-      [display_class>=0][display_class<=2] {text-size:12;}
-      [display_class>=3][display_class<=4] {text-size:11;}
+      [display_class>=0][display_class<=1] {text-size:12;}
+      [display_class>=2][display_class<=3] {text-size:11;}
     }
     [zoom=12] {
       [display_class>=0][display_class<=2] {text-size:13;}
-      [display_class>=3][display_class<=5] {text-size:11;}
+      [display_class>=3][display_class<=4] {text-size:11;}
     }
     [zoom>=13][zoom<=14] {
       [display_class>=0][display_class<=2] {text-size:14;}
@@ -117,7 +122,6 @@
   ::POI1[class=1057],[class=1056],[class=1062],[class=1085],[class=1075],[class=1097] {
     text-name:"''";
     text-face-name:"Open Sans Italic";
-    text-halo-radius:2;
     text-wrap-width:50;
     text-min-distance:10;
     [zoom>=7][zoom<=8] {}
@@ -133,7 +137,7 @@
       [display_class=0] {text-character-spacing:2}
     }
     [zoom>=10][zoom<=11] {
-      [display_class>=0] {text-name:"[name]";text-size:14;text-character-spacing:2;}
+      [display_class=0] {text-name:"[name]";text-size:14;text-character-spacing:2;}
       [display_class>=1][display_class<=4] {text-name:"[name]";text-size:12;}
       [display_class>=5][display_class<=6] {text-name:"[name]";text-size:11;}
     }
@@ -165,11 +169,14 @@
     [class=1085] {text-fill:#82592a}
     [class=1075] {text-fill:#4d4d4d}
     [class=1097] {text-fill:#006837}
+/*  text halo has been removed for all park, reservation and military features
+    text-halo-radius:2;
     [zoom>=2][zoom<=6] {text-halo-fill:@background_2-6}
     [zoom>=7][zoom<=8] {text-halo-fill:@background_7-8}
     [zoom>=9][zoom<=12] {text-halo-fill:@background_9-12}
     [zoom>=13][zoom<=15] {text-halo-fill:@background_13-15}
     [zoom>=16][zoom<=18] {text-halo-fill:@background_16-18}
+*/
   }
   ::airport[class=1070][zoom>=9][zoom<=18] {
     ::icon {
@@ -180,7 +187,7 @@
         [zoom>=11][zoom<=18] {marker-file:url("markers/airfield.svg");}
       }
     }
-    ::text[zoom>=11][zoom<=18] {
+    ::text[zoom>=10][zoom<=18] {
       text-name:"''";
       text-face-name:"Open Sans Regular";
       text-fill:#666666;
@@ -189,7 +196,7 @@
       text-halo-radius:2;
       text-wrap-width:50;
       [display_class=0] {
-        [zoom>=11][zoom<=18] {text-name:"[name]";text-transform:uppercase;}
+        [zoom>=10][zoom<=18] {text-name:"[name]";text-transform:uppercase;}
       }
       [display_class>=1] {
         [zoom>=14][zoom<=18] {text-name:"[name]";}

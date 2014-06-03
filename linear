@@ -273,7 +273,7 @@
   }
   ::major_road2-3_fill[rclass>=2][rclass<=3][ramp!=true] {
     [zoom>=12][zoom<=15] {
-      [zoom=12] {line-color:#ffdc73;}
+      [zoom=12] {line-color:#ffd773;}
       [zoom=13] {line-color:#ffe37d;}
       [zoom=14] {line-color:#ffe485;}
       [zoom=15] {line-color:#faeca7;}
@@ -417,19 +417,10 @@
       line-pattern-smooth:1;
     }
   }
-  ::minor_road[rclass=5][ramp!=true] {
-    ::casing[zoom>=16][zoom<=18] {
+  ::minor_road_casing[rclass=5][ramp!=true] {
+    [zoom>=16][zoom<=18] {
       line-color:#e6e6e6;line-cap:round;line-join:round;
       [restriction=true] {line-color:#c9c9c9}
-    }
-    ::fill[zoom>=16][zoom<=18] {
-      line-color:#ffffff;line-cap:round;line-join:round;
-      [restriction=true] {line-color:#ebebeb}
-    }
-    ::oneway[zoom>=16][zoom<=18][oneway=true][ramp!=true][rclass=5] {
-      [zoom=16] {line-pattern-file:url(markers/oneway_4-6_16.png);}
-      [zoom>=17][zoom<=18] {line-pattern-file:url(markers/oneway_4-6_17-18.png);}
-      line-pattern-smooth:1;
     }
   }
   ::surface_ramp[rclass!=0][ramp=true] {
@@ -457,6 +448,21 @@
     [zoom>=16][zoom<=18] {
       line-color:#f2c97c;line-cap:round;line-join:round;}
   }
+
+  ::minor_road_fill[rclass=5][ramp!=true] {
+    [zoom>=16][zoom<=18] {
+      line-color:#ffffff;line-cap:round;line-join:round;
+      [restriction=true] {line-color:#ebebeb}
+    }
+    ::oneway[zoom>=16][zoom<=18][oneway=true][ramp!=true][rclass=5] {
+      [zoom=16] {line-pattern-file:url(markers/oneway_4-6_16.png);}
+      [zoom>=17][zoom<=18] {line-pattern-file:url(markers/oneway_4-6_17-18.png);}
+      line-pattern-smooth:1;
+    }
+  }
+
+
+
   ::major_road4_fill[rclass=4][ramp!=true] {
     [zoom>=16][zoom<=18] {
       line-color:#ffffff;line-cap:round;line-join:round;
@@ -729,17 +735,10 @@
       [zoom=18] {line-width:3;}
     }
   }
-  ::minor_road[rclass=5][ramp!=true] {
-    ::casing {
-      [zoom=16] {line-width:6;}
-      [zoom=17] {line-width:8;}
-      [zoom=18] {line-width:11;}
-    }
-    ::fill {
-      [zoom=16] {line-width:3;}
-      [zoom=17] {line-width:5;}
-      [zoom=18] {line-width:8;}
-    }
+  ::minor_road_casing[rclass=5][ramp!=true] {
+    [zoom=16] {line-width:6;}
+    [zoom=17] {line-width:8;}
+    [zoom=18] {line-width:11;}
   }
   ::surface_ramp[rclass!=0][ramp=true] {
     ::casing {
@@ -770,6 +769,11 @@
       [zoom=18] {line-width:14;}
   }
 
+  ::minor_road_fill[rclass=5][ramp!=true] {
+    [zoom=16] {line-width:3;}
+    [zoom=17] {line-width:5;}
+    [zoom=18] {line-width:8;}
+  }
   ::major_road4_fill[rclass=4][ramp!=true] {
       [zoom=16] {line-width:4;}
       [zoom=17] {line-width:6;}
