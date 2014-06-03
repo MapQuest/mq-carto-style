@@ -1,20 +1,20 @@
 /* zoom 14+ */
-@city_text_0_14:21;
-@city_text_1_14:20;
-@city_text_2_14:19;
-@city_text_3_14:16;
-@city_text_4_14:12;
+@city_text_0_14:22;
+@city_text_1_14:21;
+@city_text_2_14:20;
+@city_text_3_14:17;
+@city_text_4_14:13;
 /* zoom 12-13 */
-@city_text_0_1213:19;
-@city_text_1_1213:17;
-@city_text_2_1213:16;
-@city_text_3_1213:11;
-@city_text_4_10111213:11;
+@city_text_0_1213:20;
+@city_text_1_1213:18;
+@city_text_2_1213:17;
+@city_text_3_1213:12;
+@city_text_4_10111213:12;
 /* zoom 10-11 */
-@city_text_0_1011:16;
-@city_text_1_1011:13;
-@city_text_2_1011:12;
-@city_text_3_1011:11;
+@city_text_0_1011:17;
+@city_text_1_1011:14;
+@city_text_2_1011:13;
+@city_text_3_1011:12;
 /* zoom ~8-9 */
 @city_text_0_789:16;
 @city_text_1_89:13;

@@ -203,14 +203,11 @@
     [zoom>=14][zoom<=15] {line-color:#b9c6d1;line-cap:round;line-join:round;}
   }
   ::railroad[rclass=14] {
-    ::casing {
-      [zoom=15] {line-color:#ddd8ce;line-cap:round;line-join:round;}
-    }
-    ::fill[zoom>=13][zoom<=15] {
-      [zoom>=13][zoom<=14] {line-color:#ddd8ce;}
-      [zoom=15] {line-color:#ffffff;line-dasharray:4,4;line-cap:butt;}
-      line-cap:round;line-join:round;
-    }
+    [zoom>=13][zoom<=15] {
+      line-color:#ddd8ce;
+      line-dasharray:3,3;
+      line-cap:round;
+      line-join:round;}
   }
   ::service_road[rclass=6] {
     ::casing {
@@ -389,10 +386,7 @@
     }
   }
   ::railroad[rclass=14] {
-    ::casing[zoom>=16][zoom<=18] {
-      [zoom=16] {line-color:#ccc7be;line-cap:round;line-join:round;}
-      [zoom>=17][zoom<=18] {line-color:#c4c0b7;line-cap:round;line-join:round;}
-    }
+    ::casing[zoom>=16][zoom<=18] {line-color:#ccc7be;line-cap:round;line-join:round;}
     ::fill[zoom>=16][zoom<=18] {
       [zoom>=16][zoom<=18] {
         line-color:#ffffff;line-cap:butt;line-join:round;
@@ -448,7 +442,6 @@
     [zoom>=16][zoom<=18] {
       line-color:#f2c97c;line-cap:round;line-join:round;}
   }
-
   ::minor_road_fill[rclass=5][ramp!=true] {
     [zoom>=16][zoom<=18] {
       line-color:#ffffff;line-cap:round;line-join:round;
@@ -460,9 +453,6 @@
       line-pattern-smooth:1;
     }
   }
-
-
-
   ::major_road4_fill[rclass=4][ramp!=true] {
     [zoom>=16][zoom<=18] {
       line-color:#ffffff;line-cap:round;line-join:round;
@@ -603,14 +593,9 @@
     [zoom>=14][zoom<=15] {line-width:1.0;}
   }
   ::railroad[rclass=14] {
-    ::casing {
-      [zoom=15] {line-width:3;}
-    }
-    ::fill {
-      [zoom=13] {line-width:0.5;}
-      [zoom=14] {line-width:1;}
-      [zoom=15] {line-width:1;}
-    }
+    [zoom=13] {line-width:0.25;}
+    [zoom=14] {line-width:0.5;}
+    [zoom=15] {line-width:1;}
   }
   ::service_road[rclass=6] {
     ::casing {
