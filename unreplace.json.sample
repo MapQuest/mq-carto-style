@@ -1,0 +1,26 @@
+[
+  {
+    "if": {
+      "Datasource.dbname": "multinet"
+    },
+    "then": {
+      "Datasource.dbname": "%(dbname)s",
+      "Datasource.host": "%(host)s",
+      "Datasource.port": "%(port)s",
+      "Datasource.user": "%(user)s",
+      "Datasource.password": "%(password)s"
+    }
+  },
+  {
+    "if": {
+      "Datasource.dbname": "naturalearth"
+    },
+    "then": {
+      "Datasource.dbname": "%(natename)s",
+      "Datasource.host": "%(natehost)s",
+      "Datasource.port": "%(nateport)s",
+      "Datasource.user": "%(nateuser)s",
+      "Datasource.password": "%(natepassword)s"
+    }
+  }
+]
