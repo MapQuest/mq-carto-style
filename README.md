@@ -3,7 +3,7 @@ mq-carto-style
 
 ####MapQuest style in Carto. Alpha style; not ready for production use yet!
 
-####To actually use the project mml and make changes you workflow might look like so:
+####To actually use the project mml and make changes your workflow might look like so:
 
 1. `cp -rp replace.json.sample replace.json`
 1. edit the values in `replace.json` to match your system's database setup
