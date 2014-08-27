@@ -1,0 +1,784 @@
+{
+ "bounds": [
+  -105.203,
+  39.7175,
+  -104.7663,
+  39.96
+ ],
+ "center": [
+  -104.9878,
+  39.8205,
+  12
+ ],
+ "format": "png",
+ "interactivity": false,
+ "minzoom": 4,
+ "maxzoom": 18,
+ "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+ "Stylesheet": [
+  "base",
+  "polygonal",
+  "linear",
+  "point_label",
+  "linear_label",
+  "point_label2",
+  "linear_label2",
+  "point_label3"
+ ],
+ "Layer": [
+  {
+   "geometry": "polygon",
+   "extent": [
+    -180,
+    -85.051,
+    180,
+    85.051
+   ],
+   "id": "boundingbox",
+   "class": "",
+   "Datasource": {
+    "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-900913-bounding-box.zip",
+    "id": "boundingbox",
+    "project": "mq_raster_specs",
+    "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+   },
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "boundingbox"
+  },
+  {
+   "geometry": "polygon",
+   "extent": [
+    -179.999989387104,
+    -85.051,
+    180,
+    85.051
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "natearth_ocean_10m",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-179.999989387104,-85.2219803557921,180,90.0000000000001",
+    "host": "%(natehost)s",
+    "port": "%(nateport)s",
+    "user": "%(nateuser)s",
+    "password": "%(natepassword)s",
+    "dbname": "%(natename)s"
+   },
+   "id": "natearth_ocean_10m",
+   "class": "",
+   "srs-name": "WGS84",
+   "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+   "advanced": {},
+   "name": "natearth_ocean_10m"
+  },
+  {
+   "geometry": "polygon",
+   "extent": [
+    -165.965618939309,
+    -50.6696248183775,
+    176.093829302878,
+    81.9552775253725
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "natearth_lakes_10m",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-165.965618939309,-50.6696248183775,176.093829302878,81.9552775253725",
+    "host": "%(natehost)s",
+    "port": "%(nateport)s",
+    "user": "%(nateuser)s",
+    "password": "%(natepassword)s",
+    "dbname": "%(natename)s"
+   },
+   "id": "natearth_lakes_10m",
+   "class": "",
+   "srs-name": "WGS84",
+   "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+   "advanced": {},
+   "name": "natearth_lakes_10m"
+  },
+  {
+   "geometry": "polygon",
+   "extent": [
+    -179.9999999999996,
+    -85.051,
+    179.9999999999996,
+    82.21915290000001
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "vector_polygonal_geometry_6",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-20037508.3427892,-20427623.8599454,20037508.3427892,17145519.3527414",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s"
+   },
+   "id": "vector_polygonal_geometry_6",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_polygonal_geometry_6"
+  },
+  {
+   "geometry": "polygon",
+   "extent": [
+    -179.9999999999996,
+    -85.051,
+    179.9999999999996,
+    73.75555399999999
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "vector_polygonal_geometry_8",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-20037508.3427892,-20427623.8599454,20037508.3427892,12417549.6598506",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s"
+   },
+   "id": "vector_polygonal_geometry_8",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_polygonal_geometry_8"
+  },
+  {
+   "geometry": "polygon",
+   "extent": [
+    -179.9999999999996,
+    -85.051,
+    179.9999999999996,
+    82.21915290000001
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "vector_polygonal_geometry_10",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-20037508.3427892,-20427623.8599454,20037508.3427892,17145519.3527414",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s"
+   },
+   "id": "vector_polygonal_geometry_10",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_polygonal_geometry_10"
+  },
+  {
+   "geometry": "polygon",
+   "extent": [
+    -179.9999999999996,
+    -85.051,
+    179.9999999999996,
+    82.21915290000001
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "vector_polygonal_geometry_12",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-20037508.3427892,-20427623.8599454,20037508.3427892,17145519.3527414",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s"
+   },
+   "id": "vector_polygonal_geometry_12",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_polygonal_geometry_12"
+  },
+  {
+   "geometry": "polygon",
+   "extent": [
+    -179.9999999999996,
+    -85.051,
+    179.9999999999996,
+    82.21915290000001
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "vector_polygonal_geometry_16",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-20037508.3427892,-20427623.8599454,20037508.3427892,17145519.3527414",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s"
+   },
+   "id": "vector_polygonal_geometry_16",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_polygonal_geometry_16"
+  },
+  {
+   "geometry": "linestring",
+   "extent": [
+    -128.34378500000014,
+    44.95625799999999,
+    -114.00095500000005,
+    53.532190999999976
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "(SELECT * FROM vector_linear_geometry_8 WHERE rclass = 15) AS data",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-14287164.7926814,5614637.83016477,-12690528.2605469,7082052.02418581",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s"
+   },
+   "id": "vector_linear_county_8",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_linear_county_8"
+  },
+  {
+   "geometry": "linestring",
+   "extent": [
+    -128.34378500000014,
+    38.17137499999996,
+    -75.36030899999997,
+    53.532190999999976
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "(SELECT * FROM vector_linear_geometry_10 WHERE rclass = 15) AS data",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-14287164.7926814,4603663.72034301,-8389071.22390375,7082052.02418581",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s"
+   },
+   "id": "vector_linear_county_10",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_linear_county_10"
+  },
+  {
+   "geometry": "linestring",
+   "extent": [
+    -128.34378500000014,
+    38.17137499999996,
+    -75.36030899999997,
+    53.532190999999976
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "(SELECT * FROM vector_linear_geometry_12 WHERE rclass = 15) AS data",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-14287164.7926814,4603663.72034301,-8389071.22390375,7082052.02418581",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s"
+   },
+   "id": "vector_linear_county_12",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_linear_county_12"
+  },
+  {
+   "geometry": "linestring",
+   "extent": [
+    -106.21019700000024,
+    38.17137499999996,
+    -75.36030899999997,
+    41.002055000000006
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "(SELECT * FROM vector_linear_geometry_16 WHERE rclass = 15) AS data",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-11823265.0470933,4603663.72034301,-8389071.22390375,5012644.78060381",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s"
+   },
+   "id": "vector_linear_county_16",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_linear_county_16"
+  },
+  {
+   "geometry": "linestring",
+   "extent": [
+    -139.047191942278,
+    -49.2507402484106,
+    178.448622267976,
+    81.13822602001461
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "natearth_state_borders_10m",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-139.047191942278,-49.2507402484106,178.448622267976,81.1382260200146",
+    "host": "%(natehost)s",
+    "port": "%(nateport)s",
+    "user": "%(nateuser)s",
+    "password": "%(natepassword)s",
+    "dbname": "%(natename)s"
+   },
+   "id": "natearth_state_borders_10m",
+   "class": "",
+   "srs-name": "WGS84",
+   "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+   "advanced": {},
+   "name": "natearth_state_borders_10m"
+  },
+  {
+   "geometry": "linestring",
+   "extent": [
+    -141.005548666072,
+    -55.1209237671617,
+    140.977626994236,
+    70.0753103641985
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "natearth_country_borders_10m",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-141.005548666072,-55.1209237671617,140.977626994236,70.0753103641985",
+    "host": "%(natehost)s",
+    "port": "%(nateport)s",
+    "user": "%(nateuser)s",
+    "password": "%(natepassword)s",
+    "dbname": "%(natename)s"
+   },
+   "id": "natearth_country_borders_10m",
+   "class": "",
+   "srs-name": "WGS84",
+   "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+   "advanced": {},
+   "name": "natearth_country_borders_10m"
+  },
+  {
+   "geometry": "linestring",
+   "extent": [
+    -166.53248206566,
+    7.997570932184111,
+    -52.7265114920263,
+    70.2870051667412
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "natearth_roads",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-166.53248206566,7.99757093218411,-52.7265114920263,70.2870051667412",
+    "host": "%(natehost)s",
+    "port": "%(nateport)s",
+    "user": "%(nateuser)s",
+    "password": "%(natepassword)s",
+    "dbname": "%(natename)s",
+    "id": "natearth_roads",
+    "project": "mq_raster_specs",
+    "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+   },
+   "id": "natearth_roads",
+   "class": "",
+   "srs-name": "WGS84",
+   "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+   "advanced": {},
+   "name": "natearth_roads"
+  },
+  {
+   "geometry": "linestring",
+   "extent": [
+    -126.39451099999985,
+    24.57252980000002,
+    -67.04390600000002,
+    51.16658899999997
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "vector_linear_geometry_6",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-14070172.6035848,2823330.17859669,-7463293.4767121,6650814.45849096",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s"
+   },
+   "id": "vector_linear_geometry_6",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_linear_geometry_6"
+  },
+  {
+   "geometry": "linestring",
+   "extent": [
+    -128.34378500000014,
+    44.95625799999999,
+    -114.00095500000005,
+    53.532190999999976
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "(SELECT * FROM vector_linear_geometry_8 WHERE rclass != 15) AS data",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-14287164.7926814,5614637.83016477,-12690528.2605469,7082052.02418581",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s"
+   },
+   "id": "vector_linear_geometry_8",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_linear_geometry_8"
+  },
+  {
+   "geometry": "linestring",
+   "extent": [
+    -128.34378500000014,
+    38.17137499999996,
+    -75.36030899999997,
+    53.532190999999976
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "(SELECT * FROM vector_linear_geometry_10 WHERE rclass != 15) AS data",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-14287164.7926814,4603663.72034301,-8389071.22390375,7082052.02418581",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s"
+   },
+   "id": "vector_linear_geometry_10",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_linear_geometry_10"
+  },
+  {
+   "geometry": "linestring",
+   "extent": [
+    -128.34378500000014,
+    38.17137499999996,
+    -75.36030899999997,
+    53.532190999999976
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "(SELECT * FROM vector_linear_geometry_12 WHERE rclass != 15) AS data",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-14287164.7926814,4603663.72034301,-8389071.22390375,7082052.02418581",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s",
+    "id": "vector_linear_geometry_12",
+    "project": "mq_raster_specs",
+    "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+   },
+   "id": "vector_linear_geometry_12",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_linear_geometry_12"
+  },
+  {
+   "geometry": "linestring",
+   "extent": [
+    -106.21019700000024,
+    38.17137499999996,
+    -75.36030899999997,
+    41.002055000000006
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "(SELECT * FROM vector_linear_geometry_16 WHERE rclass != 15) AS data",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-11823265.0470933,4603663.72034301,-8389071.22390375,5012644.78060381",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s"
+   },
+   "id": "vector_linear_geometry_16",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_linear_geometry_16"
+  },
+  {
+   "geometry": "point",
+   "extent": [
+    -126.38600042468238,
+    24.60710786105276,
+    -67.06054782148605,
+    51.15169379277966
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "(SELECT placement_id, label_id, min_zoom, max_zoom, the_geom, class, name,\nlength(name) AS name_len, display_class, feature_area, dir FROM (SELECT\nplacement_id, label_id, min_zoom, max_zoom, the_geom, class,\nunnest(text_elements) AS name, display_class, feature_area,\nfloor(random()*4) AS dir from (SELECT pl.*,(unnest(pr.labels)).* FROM\nvector_point_label_placements pl INNER JOIN vector_point_label_properties\npr ON pl.label_id = pr.label_id) x ORDER BY display_class ASC) AS data0)\nAS data",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-14069225.2106741,2827563.29156572,-7465146.0358058,6648170.59016609",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s",
+    "id": "vector_point_labels",
+    "project": "mq_raster_specs",
+    "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+   },
+   "id": "vector_point_labels",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_point_labels"
+  },
+  {
+   "geometry": "linestring",
+   "extent": [
+    -125.08726389999998,
+    38.685568999999994,
+    -75.94199999999998,
+    50.67567999999997
+   ],
+   "id": "shields",
+   "class": "",
+   "Datasource": {
+    "file": "data/highway2.shp"
+   },
+   "layer": null,
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "shields"
+  },
+  {
+   "geometry": "linestring",
+   "extent": [
+    -128.34378500000014,
+    38.17137499999996,
+    -75.36030899999997,
+    53.532190999999976
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "(SELECT * FROM vector_linear_geometry_12 WHERE rclass != 15) AS data",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-14287164.7926814,4603663.72034301,-8389071.22390375,7082052.02418581",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s"
+   },
+   "id": "vector_linear_geometry_overlay",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_linear_geometry_overlay"
+  },
+  {
+   "geometry": "linestring",
+   "extent": [
+    -127.46777200000005,
+    23.294272999999965,
+    -66.59790899999999,
+    53.77443900000002
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "vector_linear_labels",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-14189647.4715931,2667644.98466023,-7413645.31777677,7127552.95023263",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s"
+   },
+   "id": "vector_linear_labels",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_linear_labels"
+  },
+  {
+   "geometry": "point",
+   "extent": [
+    -126.38600042468238,
+    24.60710786105276,
+    -67.06054782148605,
+    51.15169379277966
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "(SELECT placement_id, label_id, min_zoom, max_zoom, the_geom, class, unnest(text_elements) AS name, display_class, feature_area, floor(random()*4) AS dir from (SELECT pl.*,(unnest(pr.labels)).*\nFROM vector_point_label_placements pl INNER JOIN vector_point_label_properties pr ON pl.label_id = pr.label_id) x ORDER BY display_class ASC) AS data",
+    "key_field": "",
+    "geometry_field": "",
+    "extent_cache": "auto",
+    "extent": "-14069225.2106741,2827563.29156572,-7465146.0358058,6648170.59016609",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s"
+   },
+   "id": "vector_point_labels2",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_point_labels2"
+  },
+  {
+   "geometry": "linestring",
+   "extent": [
+    -127.46777200000005,
+    23.294272999999965,
+    -66.59790899999999,
+    53.77443900000002
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "vector_linear_labels",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-14189647.4715931,2667644.98466023,-7413645.31777677,7127552.95023263",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s"
+   },
+   "id": "vector_linear_labels2",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_linear_labels2"
+  },
+  {
+   "geometry": "point",
+   "extent": [
+    -126.38600042468238,
+    24.60710786105276,
+    -67.06054782148605,
+    51.15169379277966
+   ],
+   "Datasource": {
+    "type": "postgis",
+    "table": "(SELECT placement_id, label_id, min_zoom, max_zoom, the_geom, class, unnest(text_elements) AS name, display_class, feature_area, floor(random()*4) AS dir from (SELECT pl.*,(unnest(pr.labels)).*\nFROM vector_point_label_placements pl INNER JOIN vector_point_label_properties pr ON pl.label_id = pr.label_id) x ORDER BY display_class ASC) AS data",
+    "key_field": "",
+    "geometry_field": "the_geom",
+    "extent_cache": "auto",
+    "extent": "-14069225.2106741,2827563.29156572,-7465146.0358058,6648170.59016609",
+    "host": "%(host)s",
+    "port": "%(port)s",
+    "user": "%(user)s",
+    "password": "%(password)s",
+    "dbname": "%(dbname)s"
+   },
+   "id": "vector_point_labels3",
+   "class": "",
+   "srs-name": "900913",
+   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+   "advanced": {},
+   "name": "vector_point_labels3"
+  }
+ ],
+ "scale": 1,
+ "metatile": 2,
+ "name": "MQ Raster Specs",
+ "description": "",
+ "attribution": ""
+}
