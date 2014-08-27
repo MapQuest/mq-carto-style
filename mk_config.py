@@ -50,8 +50,8 @@ if __name__ == "__main__":
                         if not os.path.exists(dest_dir + "/" + subdir):
                             os.makedirs(dest_dir + "/" + subdir)
                         expand_template(root + "/" + f, dest_file.replace(".template", ""), variables)
-
-                    else:
+                    #if this isnt an inplace substitution
+                    elif os.path.isfile(dest_file) and os.stat(root + "/" + f).st_ino != os.stat(dest_file).st_ino:
                         if not os.path.exists(dest_dir + "/" + subdir):
                             os.makedirs(dest_dir + "/" + subdir)
                         shutil.copyfile(root + "/" + f, dest_file)
