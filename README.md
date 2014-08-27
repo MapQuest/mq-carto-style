@@ -1,6 +1,8 @@
 mq-carto-style
 ==============
 
+####MapQuest style in Carto. Alpha style; not ready for production use yet!
+
 ####To actually use the project mml and make changes you workflow might look like so:
 
 1. `cp -rp replace.json.sample replace.json`
