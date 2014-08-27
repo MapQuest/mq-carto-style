@@ -8,7 +8,8 @@ mq-carto-style
 1. `cp -rp replace.json.sample replace.json`
 1. edit the values in `replace.json` to match your system's database setup
 1. `cartocc map.mml replace.json > project.mml`
-1. use tilemill to make changes to project.mml
+1. make the changes you see fit to project.mml
 1. `cp -rp unreplace.json.sample unreplace.json`
 1. edit the values in `unreplace.json` to match the replacements from `replace.json`
 1. `cartocc project.mml unreplace.json > map.mml`
+1. send us a PR
