@@ -619,25 +619,6 @@
   {
    "geometry": "linestring",
    "extent": [
-    -125.08726389999998,
-    38.685568999999994,
-    -75.94199999999998,
-    50.67567999999997
-   ],
-   "id": "shields",
-   "class": "",
-   "Datasource": {
-    "file": "data/highway2.shp"
-   },
-   "layer": null,
-   "srs-name": "900913",
-   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-   "advanced": {},
-   "name": "shields"
-  },
-  {
-   "geometry": "linestring",
-   "extent": [
     -128.34378500000014,
     38.17137499999996,
     -75.36030899999997,
