@@ -28,7 +28,7 @@
 }
 
 #vector_polygonal_geometry_10 {
-  ::beach[rclass=4] {[zoom>=10][zoom<=12] {polygon-fill:#d4ebb5;}}
+  ::beach[rclass=4] {[zoom>=10][zoom<=11] {polygon-fill:#d4ebb5;}}
   ::forest[rclass=3] {[zoom>=10][zoom<=11] {polygon-fill:#cadeb6;}}
   ::park[rclass=8] {[zoom>=10][zoom<=11] {polygon-fill:#cbddb6;}}
   ::heathland[rclass=5] {[zoom>=10][zoom<=11] {polygon-fill:#d2e8d1;}}
