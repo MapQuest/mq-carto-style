@@ -1,0 +1,12 @@
+{
+        "host": "%(host)s",
+        "port": %(port)s,
+        "user": "%(user)s",
+        "password": "%(password)s",
+        "databases": {
+                "vector": "%(dbname)s",
+                "mapdb": "%(mapdbname)s",
+                "naturalearth": "%(natename)s"
+        },
+        "geometry_column": "the_geom"
+}
